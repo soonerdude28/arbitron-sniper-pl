@@ -1,0 +1,43 @@
+{
+  "asOf": "Thu, Oct 29, 2026 · 12:05 AM CDT",
+  "arbitron": {
+    "twoSided": 0,
+    "balances": { "waves": 2333.8, "novig": 21.05, "fourCx": 2 },
+    "tickets": [
+      { "id": "a1", "event": "Waves props", "selection": "Ramone Green Jr Under 29.5", "stake": 25, "pnl": 27.5 },
+      { "id": "a2", "event": "Waves props", "selection": "Chris Reed Under 2.5", "stake": 25, "pnl": -25 },
+      { "id": "a3", "event": "Waves props", "selection": "Collin Sexton Under 10.5", "stake": 25, "pnl": 21.93 },
+      { "id": "a4", "event": "McCain assists", "selection": "Novig Over 2.5", "stake": 10, "pnl": 11.05 },
+      { "id": "a5", "event": "McCain assists", "selection": "Waves Under 2.5", "stake": 10, "pnl": -10 },
+      { "id": "a6", "event": "Spurs @ Jazz", "selection": "ProphetX Jazz +13.5", "stake": 25, "pnl": 55 },
+      { "id": "a7", "event": "Spurs @ Jazz", "selection": "Waves Spurs -13.5", "stake": 31, "pnl": -31 },
+      { "id": "a8", "event": "Thunder @ Mavs", "selection": "Novig OKC -5.5", "stake": 50, "pnl": 0 },
+      { "id": "a9", "event": "Thunder @ Mavs", "selection": "Waves Dallas +5.5", "stake": 56, "pnl": 46.67 }
+    ],
+    "pending": [],
+    "open": [
+      { "id": "o-pp", "market": "ParlayPlay free entry CAR @ GB", "stake": 0, "payout": 16.55 }
+    ]
+  },
+  "sniper": {
+    "cash": 75.48,
+    "bankroll": 61.01,
+    "status": "1W–1L on $15.00 settled · 9 open",
+    "tickets": [
+      { "id": "s-heat", "event": "Heat vs Hawks", "selection": "Miami Heat", "stake": 8, "pnl": 2.96 },
+      { "id": "s-wolves", "event": "Warriors vs Wolves", "selection": "Minnesota Timberwolves", "stake": 7, "pnl": -7 }
+    ],
+    "signals": [],
+    "open": [
+      { "id": "o1", "market": "Senate 2026 NO Democrats", "stake": 25, "payout": 73 },
+      { "id": "o2", "market": "Balance of Power Dems sweep NO", "stake": 25, "payout": 68.07 },
+      { "id": "o3", "market": "Iowa Gov Zach Lahn NO", "stake": 25, "payout": 29.24 },
+      { "id": "o4", "market": "Panthers ML at Packers", "stake": 20, "payout": 55.6 },
+      { "id": "o5", "market": "ME-02 Matthew Dunlap YES", "stake": 10, "payout": 22.37 },
+      { "id": "o6", "market": "Kansas Senate Adam Hamilton YES", "stake": 5, "payout": 11.7 },
+      { "id": "o7", "market": "AZ-01 Jay Feely NO", "stake": 8, "payout": 10.22 },
+      { "id": "o8", "market": "NC-11 Jamie Ager YES", "stake": 9, "payout": 10.25 },
+      { "id": "o9", "market": "AZ-06 Juan Ciscomani NO", "stake": 6.99, "payout": 7.8 }
+    ]
+  }
+}
