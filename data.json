@@ -517,21 +517,34 @@
   "ledger_updated_at": "2026-10-29T15:28:00-05:00"
  },
  "balances": {
-  "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT (readings 3:16-3:55 PM CT)",
-  "source_mode": "compiled from latest bot readings; no live OddsJam sweep yet",
+  "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT (live book-page sweep file write time)",
+  "source_mode": "live book-page sweep (desk_balances_live.json)",
   "accounts": [
    {
-    "book": "Waves (thewaves808.com)",
+    "book": "Waves CAM719 (thewaves808.com)",
     "type": "sportsbook",
-    "account_label_or_last4": "CAM719 (OddsJam labels: Jazz Straight + Props Builder, same account)",
+    "account_label_or_last4": "CAM719",
     "cash_balance_usd": 2333.0,
     "free_bet_or_bonus": null,
     "restricted_pending_or_open_usd": 15.0,
-    "notes": "Balance $2,333 / Pending $15 / Available $2,518 as displayed (available exceeds balance, likely includes credit). Pending = $15 Minten Under G14318735. Logged out again at 3:40 PM check; needs SecureFill relog.",
-    "source": "Arbitron session-recovery subagent reading Waves Pending Wagers page",
-    "as_of_ct": "2026-10-29 3:20 PM CT",
-    "live_oddsjam_sweep": false,
-    "available_usd": 2518.0
+    "notes": "Available $2,518; pending is G14318735 Minten U2.5 SOG risk $15 to win $10; session valid at 4:30 PM CT.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
+   },
+   {
+    "book": "Novig",
+    "type": "exchange",
+    "account_label_or_last4": null,
+    "cash_balance_usd": 6.05,
+    "free_bet_or_bonus": 0.0,
+    "restricted_pending_or_open_usd": 14.99,
+    "notes": "Open positions $14.99; portfolio total $21.04.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "ProphetX",
@@ -540,94 +553,89 @@
     "cash_balance_usd": 75.48,
     "free_bet_or_bonus": 0.0,
     "restricted_pending_or_open_usd": 95.0,
-    "notes": "Shared Arbitron/Sniper cash; $95 in 4 open Sniper positions; Arbitron floor $50.",
-    "source": "desk_session_health.json (Sniper check) + desk_pl_snapshot_latest.md",
-    "as_of_ct": "2026-10-29 3:55 PM CT",
-    "live_oddsjam_sweep": false
+    "notes": "Promo $0, BEC $0; pending $95.00 filled, $0 resting (account shared with Prediction Sniper).",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "Polymarket US",
     "type": "prediction",
-    "account_label_or_last4": "quackysnail6677",
-    "cash_balance_usd": 39.83,
-    "free_bet_or_bonus": null,
-    "restricted_pending_or_open_usd": 58.12,
-    "notes": "$58.12 staked across 9 open Sniper positions (snapshot 4:05 PM).",
-    "source": "desk_session_health.json (Sniper check)",
-    "as_of_ct": "2026-10-29 3:55 PM CT",
-    "live_oddsjam_sweep": false
-   },
-   {
-    "book": "Novig",
-    "type": "exchange",
     "account_label_or_last4": null,
-    "cash_balance_usd": 6.05,
+    "cash_balance_usd": 48.83,
     "free_bet_or_bonus": null,
-    "restricted_pending_or_open_usd": 15.0,
-    "notes": "Portfolio $21.04 = $6.05 cash + $10 Minten Over (Arbitron) + $5 Heat ML (Sniper). Under $10, Sniper skipping.",
-    "source": "desk_session_health.json (Sniper check)",
-    "as_of_ct": "2026-10-29 3:55 PM CT",
-    "live_oddsjam_sweep": false
+    "restricted_pending_or_open_usd": null,
+    "notes": "Portfolio value $101.03 including open positions (shared with Prediction Sniper).",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "4Cx",
     "type": "exchange",
     "account_label_or_last4": null,
     "cash_balance_usd": 2.0,
-    "free_bet_or_bonus": "100 GC (Oct 28 snapshot)",
-    "restricted_pending_or_open_usd": null,
-    "notes": "KYC still required.",
-    "source": "desk_session_health.json (Arbitron check)",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
-   },
-   {
-    "book": "Underdog",
-    "type": "dfs",
-    "account_label_or_last4": null,
-    "cash_balance_usd": 0.0,
     "free_bet_or_bonus": null,
     "restricted_pending_or_open_usd": null,
-    "notes": "Signed in confirmed 3:17 PM; app loaded $0.00 at 3:40 PM.",
-    "source": "Arbitron health check / recovery report",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
-   },
-   {
-    "book": "ParlayPlay",
-    "type": "dfs",
-    "account_label_or_last4": null,
-    "cash_balance_usd": 0.0,
-    "free_bet_or_bonus": "$5 free entry open (CAR @ GB 7:15 PM CT, to win $16.55)",
-    "restricted_pending_or_open_usd": 5.0,
-    "notes": "Signed in confirmed 3:16 PM.",
-    "source": "Arbitron health check / recovery report",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
+    "notes": "Wallet shows 2.00 without currency symbol; KYC required before betting.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "Onyx Odds",
     "type": "sportsbook",
-    "account_label_or_last4": null,
-    "cash_balance_usd": null,
-    "free_bet_or_bonus": "1,000 Onyx Coins (non-withdrawable)",
-    "restricted_pending_or_open_usd": null,
-    "notes": "No cash figure shown at 3:17 PM; blank splash at 3:40 PM. Oct 28 11:40 PM snapshot showed $20.00 with 1x playthrough; not re-confirmed today.",
-    "source": "Arbitron recovery report + desk_session_health.json",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
-   },
-   {
-    "book": "BetOpenly",
-    "type": "exchange",
-    "account_label_or_last4": null,
+    "account_label_or_last4": "ceverett258 (WY408438)",
     "cash_balance_usd": 0.0,
     "free_bet_or_bonus": null,
     "restricted_pending_or_open_usd": null,
-    "notes": "Verify Your ID prompt (KYC pending).",
-    "source": "desk_session_health.json (Arbitron check)",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
+    "notes": "Sweepstakes: Onyx Cash $0, redeemable $0, 1,000 Onyx Coins (not cash); location verified.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
+   },
+   {
+    "book": "Underdog",
+    "type": "dfs",
+    "account_label_or_last4": "CEVERETT258",
+    "cash_balance_usd": 0.0,
+    "free_bet_or_bonus": 0.0,
+    "restricted_pending_or_open_usd": null,
+    "notes": "Signed in; withdrawable $0.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
+   },
+   {
+    "book": "ParlayPlay",
+    "type": "dfs",
+    "account_label_or_last4": "ceverett258",
+    "cash_balance_usd": 0.0,
+    "free_bet_or_bonus": null,
+    "restricted_pending_or_open_usd": null,
+    "notes": "Signed in; deposit-match promo offered (untouched); $5 free entry already riding on CAR@GB (bets.csv ID 10).",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
+   },
+   {
+    "book": "BetOpenly",
+    "type": "prediction",
+    "account_label_or_last4": null,
+    "cash_balance_usd": 0.0,
+    "free_bet_or_bonus": 0.0,
+    "restricted_pending_or_open_usd": null,
+    "notes": "ID verification required.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "Rebet",
@@ -636,10 +644,11 @@
     "cash_balance_usd": null,
     "free_bet_or_bonus": null,
     "restricted_pending_or_open_usd": null,
-    "notes": "Invalid-location block from box; no account view.",
-    "source": "desk_session_health.json (Arbitron check)",
-    "as_of_ct": "2026-10-29 3:40 PM CT",
-    "live_oddsjam_sweep": false
+    "notes": "Logged out ('Sign in' shown); not signed in this check.",
+    "source": "book_page",
+    "as_of_ct": "Thu, Oct 29, 2026 4:20 PM CDT",
+    "live_oddsjam_sweep": true,
+    "reported_checked_at_ct": "2026-10-29T16:25:00-05:00"
    },
    {
     "book": "Kalshi",
@@ -774,54 +783,63 @@
     "live_oddsjam_sweep": false
    }
   ],
+  "notes": [
+   "OddsJam has no connected-accounts view (/account/connected-accounts 404; bet-tracker 'Profile not found'), so values come from each book's own page, not OddsJam.",
+   "OddsJam: No connected-accounts/bankroll view found (/account/connected-accounts 404; bet-tracker 'Profile not found').",
+   "Rows reported checked_at 4:25 PM CT (and a 4:30 PM Waves note), later than the file was written (4:20:58 PM CDT); as_of_ct set to the write time, reported time kept in reported_checked_at_ct."
+  ],
   "totals": {
-   "cash_known_usd": 2456.36,
-   "cash_known_using_waves_available_usd": 2641.36,
-   "accounts_with_known_cash": 8,
-   "accounts_unknown": 13
+   "cash_known_usd": 2465.36,
+   "accounts_with_known_cash": 9,
+   "accounts_unknown": 12
   },
-  "as_of": "Oct 29, 2026 3:16-3:55 PM CT book reads",
-  "total": 2456.36,
+  "as_of": "Thu, Oct 29, 2026 4:20 PM CDT (live book-page sweep file write time)",
+  "total": 2465.36,
   "books": [
    {
-    "book": "Waves (thewaves808.com) (CAM719)",
+    "book": "Waves CAM719 (thewaves808.com) (CAM719)",
     "cash": 2333.0,
-    "note": "Balance $2,333 / Pending $15 / Available $2,518 as displayed (available exceeds balance, likely includes credit). Pending = $15 Minten Under G14318735. Logged out again at 3:40 PM check; needs SecureFill relog."
-   },
-   {
-    "book": "ProphetX",
-    "cash": 75.48,
-    "note": "Shared Arbitron/Sniper cash; $95 in 4 open Sniper positions; Arbitron floor $50."
-   },
-   {
-    "book": "Polymarket US (quackysnail6677)",
-    "cash": 39.83,
-    "note": "$58.12 staked across 9 open Sniper positions (snapshot 4:05 PM)."
+    "note": "Available $2,518; pending is G14318735 Minten U2.5 SOG risk $15 to win $10; session valid at 4:30 PM CT."
    },
    {
     "book": "Novig",
     "cash": 6.05,
-    "note": "Portfolio $21.04 = $6.05 cash + $10 Minten Over (Arbitron) + $5 Heat ML (Sniper). Under $10, Sniper skipping."
+    "note": "Open positions $14.99; portfolio total $21.04."
+   },
+   {
+    "book": "ProphetX",
+    "cash": 75.48,
+    "note": "Promo $0, BEC $0; pending $95.00 filled, $0 resting (account shared with Prediction Sniper)."
+   },
+   {
+    "book": "Polymarket US",
+    "cash": 48.83,
+    "note": "Portfolio value $101.03 including open positions (shared with Prediction Sniper)."
    },
    {
     "book": "4Cx",
     "cash": 2.0,
-    "note": "KYC still required."
+    "note": "Wallet shows 2.00 without currency symbol; KYC required before betting."
    },
    {
-    "book": "Underdog",
+    "book": "Onyx Odds (ceverett258)",
     "cash": 0.0,
-    "note": "Signed in confirmed 3:17 PM; app loaded $0.00 at 3:40 PM."
+    "note": "Sweepstakes: Onyx Cash $0, redeemable $0, 1,000 Onyx Coins (not cash); location verified."
    },
    {
-    "book": "ParlayPlay",
+    "book": "Underdog (CEVERETT258)",
     "cash": 0.0,
-    "note": "Signed in confirmed 3:16 PM."
+    "note": "Signed in; withdrawable $0."
+   },
+   {
+    "book": "ParlayPlay (ceverett258)",
+    "cash": 0.0,
+    "note": "Signed in; deposit-match promo offered (untouched); $5 free entry already riding on CAR@GB (bets.csv ID 10)."
    },
    {
     "book": "BetOpenly",
     "cash": 0.0,
-    "note": "Verify Your ID prompt (KYC pending)."
+    "note": "ID verification required."
    }
   ]
  },
