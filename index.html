@@ -11,46 +11,50 @@
   .header { text-align: center; margin-bottom: 30px; }
   .header h1 { font-size: 1.8rem; margin-bottom: 6px; }
   .header .sub { color: var(--muted); font-size: 0.95rem; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1320px; margin: 0 auto; }
+  .global-pill { display: inline-block; margin-top: 10px; background: rgba(0, 212, 170, 0.14); border: 1px solid var(--green); color: var(--green); font-size: 0.82rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1360px; margin: 0 auto; }
   @media (max-width: 960px) { .grid { grid-template-columns: 1fr; } }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
-  .card h2 { font-size: 1.25rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-  .metric-row { display: flex; justify-content: space-between; margin: 8px 0; font-size: 0.95rem; gap: 12px; }
+  .card h2 { font-size: 1.25rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .metric-row { display: flex; justify-content: space-between; margin: 8px 0; font-size: 0.94rem; gap: 12px; }
   .metric-row .label { color: var(--muted); }
   .metric-row .value { font-weight: 600; text-align: right; }
   .positive { color: var(--green); }
   .negative { color: var(--red); }
   .neutral { color: var(--blue); }
   .warning { color: var(--amber); }
-  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.81rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.80rem; }
   th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
   th { color: var(--muted); font-weight: 500; }
-  .combined { max-width: 1320px; margin: 20px auto 0; }
+  .combined { max-width: 1360px; margin: 20px auto 0; }
   .update-note { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 30px; }
-  .badge { display: inline-block; background: var(--accent); color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+  .badge { display: inline-block; background: var(--accent); color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 6px; }
+  .badge-green { display: inline-block; background: #009e7f; color: white; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 6px; }
 </style>
 </head>
 <body>
 <div class="header">
   <h1>Arbitron + Prediction Sniper P/L Dashboard</h1>
-  <div class="sub">Live 30-Min Auto-Sync Snapshot as of Wed, Oct 28, 2026 ~9:02 PM CDT • Powered by OddsJam Execution & Bot Ledgers</div>
+  <div class="sub">Live 30-Min Auto-Sync Snapshot as of Wed, Oct 28, 2026 ~9:21 PM CDT • Powered by OddsJam Execution & Bot Ledgers</div>
+  <div class="global-pill">24/7 Worldwide All-Sports Coverage Active • All Time Zones (Soccer, Tennis, Cricket, Basketball, Baseball, Hockey, Combat Sports, Esports & Prediction Markets)</div>
 </div>
 <div class="grid">
   <div class="card">
-    <h2>Arbitron <span class="badge">OddsJam Sports Arb</span></h2>
-    <div class="metric-row"><span class="label">Realized Net Profit (Settled)</span><span class="value positive">+$24.43 (+32.57% ROI on $75 staked)</span></div>
-    <div class="metric-row"><span class="label">Settled Record</span><span class="value">2W – 1L</span></div>
-    <div class="metric-row"><span class="label">Locked Two-Sided Arbs & Hedges</span><span class="value positive">2 Active Pairs (+$24.45 to +$25.84 locked)</span></div>
-    <div class="metric-row"><span class="label">Waves Balance (CAM719)</span><span class="value">$2,287.14 cash ($41.00 pending)</span></div>
-    <div class="metric-row"><span class="label">Polymarket US Balance</span><span class="value positive">$61.01 free cash ($38.99 staked / $98.53 port.)</span></div>
-    <div class="metric-row"><span class="label">ProphetX Balance</span><span class="value positive">$21.08 free cash ($127.00 staked / 0 resting)</span></div>
-    <div class="metric-row"><span class="label">Novig Balance</span><span class="value">$0.00 free cash ($59.97 open)</span></div>
-    <div class="metric-row"><span class="label">4Cx Cash</span><span class="value">$2.00</span></div>
-    <div class="metric-row"><span class="label">Saved OddsJam Filter</span><span class="value neutral">Funded Accounts Only (Novig, PX, 4Cx, Jazz, PB)</span></div>
-    <h3 style="margin-top:18px; font-size:1rem;">Locked Two-Sided Arbs & Promo Conversions (Open)</h3>
-    <table><thead><tr><th>Event & Market</th><th>Two-Book Legs</th><th>Outlay &rarr; Payout</th><th>Locked Profit</th></tr></thead><tbody>
-    <tr><td>Thunder vs Mavericks — Jared McCain Assists 2.5 (7.15% Arb)</td><td>Novig O2.5 (+111, $10.00) / Waves U2.5 (+120, $10.00, Ticket G14312903)</td><td>$20.00 &rarr; $21.05–$22.00</td><td class="positive">+$1.05 to +$2.00</td></tr>
-    <tr><td>Spurs @ Jazz — Spread &plusmn;13.5 Promo Conversion</td><td>ProphetX Jazz +13.5 (+120, $25.00 promo) / Waves Spurs -13.5 (-130, $31.00, #1565655598)</td><td>$31.00 cash &rarr; $54.84–$55.00</td><td class="positive">+$23.40 to +$23.84</td></tr>
+    <h2>Arbitron & Promo Conversions <span class="badge">OddsJam Arb + Promo Finder</span> <span class="badge-green">24/7 Global All-Sports</span></h2>
+    <div class="metric-row"><span class="label">Realized Net Profit (Settled)</span><span class="value positive">+$24.43 (+32.57% ROI on $75 staked, 2W–1L)</span></div>
+    <div class="metric-row"><span class="label">Locked Unsettled Guaranteed Profit</span><span class="value positive">+$71.11 to +$72.68 (3 Locked Two-Sided Pairs)</span></div>
+    <div class="metric-row"><span class="label">ParlayPlay $5 Free Entry Upside</span><span class="value positive">+$16.55 potential ($0.00 cash risk, 3.31x All-In)</span></div>
+    <div class="metric-row"><span class="label">Waves Balance (CAM719)</span><span class="value">$2,262.14 cash / $2,431.00 avail ($97.00 pending)</span></div>
+    <div class="metric-row"><span class="label">Polymarket US (quackysnail6677)</span><span class="value positive">$61.01 free cash ($38.99 staked / $98.53 port.)</span></div>
+    <div class="metric-row"><span class="label">ProphetX Balance</span><span class="value positive">$21.08 free cash ($0 promo / $127 staked / 0 resting)</span></div>
+    <div class="metric-row"><span class="label">Novig Balance</span><span class="value">$0.00 cash / $0.00 credits ($59.97 deployed)</span></div>
+    <div class="metric-row"><span class="label">ParlayPlay / 4Cx / Kalshi</span><span class="value neutral">PP $5 Free Entry • 4Cx $2 + 100 GC • Kalshi $25 ODDSJAM</span></div>
+    <h3 style="margin-top:18px; font-size:1rem;">Locked Promo Conversions & Two-Sided Arbs (Open)</h3>
+    <table><thead><tr><th>Conversion / Event</th><th>Two-Book Legs</th><th>Outlay &rarr; Return</th><th>Locked Profit</th></tr></thead><tbody>
+    <tr><td><strong>Conv #1 (94.5%)</strong>: Spurs @ Jazz &plusmn;13.5</td><td>ProphetX $25 Promo Jazz +13.5 (+120, Ref 754f...7153) / Waves $31 Cash Spurs -13.5 (-130, #1565655598)</td><td>$31 cash &rarr; $54.40–$54.84</td><td class="positive">+$23.40 to +$23.84</td></tr>
+    <tr><td><strong>Conv #2 (93.5%)</strong>: Thunder @ Mavs &plusmn;5.5</td><td>Novig $50 Credits (5&times;$10) OKC -5.5 (1@2.04x + 4@2.06x) / Waves $56 Cash DAL +5.5 (-120, #1565696716)</td><td>$56 cash &rarr; $102.66–$102.84</td><td class="positive">+$46.66 to +$46.84</td></tr>
+    <tr><td><strong>7.15% Cash Arb</strong>: McCain Assists 2.5</td><td>Novig $10 Cash Over 2.5 (+111, 2.11x) / Waves $10 Cash Under 2.5 (+120, Ticket G14312903)</td><td>$20 cash &rarr; $21.05–$22.00</td><td class="positive">+$1.05 to +$2.00</td></tr>
+    <tr><td><strong>Conv #3 ($5 Free)</strong>: NFL CAR @ GB (10/29)</td><td>ParlayPlay $5 Free Entry: Bryce Young O253.5 Pass Yds + Tucker Kraft U4.5 Rec (3.31x All-In)</td><td>$0 cash &rarr; $16.55 potential</td><td class="neutral">+$16.55 upside ($0 risk)</td></tr>
     </tbody></table>
     <h3 style="margin-top:18px; font-size:1rem;">Settled Tickets (thewaves808.com)</h3>
     <table><thead><tr><th>Event</th><th>Selection</th><th>Odds / Stake</th><th>Realized P/L</th></tr></thead><tbody>
@@ -58,15 +62,9 @@
     <tr><td>Sam Houston @ MSU</td><td>Chris Reed Under 2.5 Receptions (G14246723)</td><td>+172 / $25.00</td><td class="negative">-$25.00</td></tr>
     <tr><td>Blazers @ Lakers</td><td>Collin Sexton Under 10.5 Points (G14263213)</td><td>-114 / $25.00</td><td class="positive">+$21.93</td></tr>
     </tbody></table>
-    <h3 style="margin-top:18px; font-size:1rem;">Additional Monitored Two-Sided Arbs (OddsJam Board)</h3>
-    <table><thead><tr><th>Event & Market</th><th>Two-Book Legs</th><th>Outlay &rarr; Payout</th><th>ROI / Profit</th></tr></thead><tbody>
-    <tr><td>Spurs @ Jazz — Stephon Castle 3s O/U 1.5</td><td>Novig O1.5 (-141, $10) / Waves U1.5 (+185, $6.00)</td><td>$16.00 &rarr; $17.09</td><td class="positive">+6.84% (+$1.09)</td></tr>
-    <tr><td>Knicks @ Bulls — Ayo Dosunmu Reb O/U 3.5</td><td>Novig O3.5 (-135, $10) / Waves U3.5 (+155, $6.83)</td><td>$16.83 &rarr; $17.41</td><td class="positive">+3.45% (+$0.58)</td></tr>
-    <tr><td>Commanders @ Eagles (NFL) — Alt Spread &plusmn;10.5</td><td>Novig WAS -10.5 (+228, $10) / Waves PHI +10.5 (-214, $22.35)</td><td>$32.35 &rarr; $32.80</td><td class="positive">+1.38% (+$0.45)</td></tr>
-    </tbody></table>
   </div>
   <div class="card">
-    <h2>Prediction Sniper <span class="badge">OddsJam Prediction Traders</span></h2>
+    <h2>Prediction Sniper <span class="badge">OddsJam Prediction Traders</span> <span class="badge-green">24/7 Global All-Sports</span></h2>
     <div class="metric-row"><span class="label">Realized Net P/L (Settled)</span><span class="value positive">+$2.96 (1W–0L: Miami Heat ML WON $8 &rarr; $10.96)</span></div>
     <div class="metric-row"><span class="label">Total Active Open Positions</span><span class="value positive">11 Open ($165.99 staked &rarr; $355.25 payout)</span></div>
     <div class="metric-row"><span class="label">ProphetX Open (6 Positions)</span><span class="value positive">$127.00 staked &rarr; $292.91 payout ($21.08 free cash)</span></div>
@@ -76,7 +74,7 @@
     <table><thead><tr><th>Market & Side</th><th>Venue</th><th>Stake @ Entry</th><th>Realized P/L</th></tr></thead><tbody>
     <tr><td>Miami Heat vs Hawks — Miami Heat ML (90 Conf)</td><td>ProphetX</td><td>$8.00 @ 72.97% (-7.6% slip)</td><td class="positive">WON +$2.96 net ($10.96)</td></tr>
     </tbody></table>
-    <h3 style="margin-top:18px; font-size:1rem;">5 New Open Positions on Polymarket US ($38.99 Staked &rarr; $62.34 Payout)</h3>
+    <h3 style="margin-top:18px; font-size:1rem;">5 Open Positions on Polymarket US ($38.99 Staked &rarr; $62.34 Payout)</h3>
     <table><thead><tr><th>Market & Side</th><th>Conf</th><th>Stake @ Entry (Slippage)</th><th>Potential Payout</th></tr></thead><tbody>
     <tr><td>ME-02 House — Matthew Dunlap (D) YES</td><td>98</td><td>$10.00 @ 43.0¢ (-3.15% vs 44.4¢ whale)</td><td class="positive">$22.37 (+$12.37 net)</td></tr>
     <tr><td>Kansas Senate — Adam Hamilton (D) YES</td><td>98</td><td>$5.00 @ 41.0¢ (+1.23% vs 40.5¢ whale)</td><td class="positive">$11.70 (+$6.70 net)</td></tr>
@@ -96,13 +94,14 @@
   </div>
 </div>
 <div class="card combined">
-  <h2>Combined Desk Snapshot</h2>
-  <div class="metric-row"><span class="label">Total Realized Net P/L (Both Bots)</span><span class="value positive">+$27.39 (+$24.43 Arbitron + +$2.96 Prediction Sniper)</span></div>
-  <div class="metric-row"><span class="label">Locked Unsettled Arb & Promo Profit</span><span class="value positive">+$24.45 to +$25.84 guaranteed (McCain Assists 2.5 Arb + Jazz/Spurs 13.5 Promo Hedge)</span></div>
+  <h2>Combined Desk Snapshot <span class="badge-green">24/7 Worldwide All-Sports Coverage Active</span></h2>
+  <div class="metric-row"><span class="label">Total Realized Net P/L (Settled)</span><span class="value positive">+$27.39 (+$24.43 Arbitron + +$2.96 Prediction Sniper)</span></div>
+  <div class="metric-row"><span class="label">Locked Unsettled Guaranteed Profit (3 Active Hedges/Arbs)</span><span class="value positive">+$71.11 to +$72.68 guaranteed (+$23.40–$23.84 Spurs/Jazz + +$46.66–$46.84 OKC/DAL + +$1.05–$2.00 McCain Assists) + $16.55 ParlayPlay Free Entry</span></div>
+  <div class="metric-row"><span class="label">Combined Realized + Locked Guaranteed Profit</span><span class="value positive">+$98.50 to +$100.07 (before 10 open Sniper positions & $16.55 ParlayPlay free entry!)</span></div>
   <div class="metric-row"><span class="label">Prediction Sniper Open Positions (11 Total)</span><span class="value positive">$165.99 staked &rarr; $355.25 potential payout ($127.00 on ProphetX + $38.99 on Polymarket US; 0 resting orders)</span></div>
-  <div class="metric-row"><span class="label">Funded Account Balances</span><span class="value">Waves $2,287.14 cash ($41 pending) • Polymarket US $61.01 free ($38.99 staked) • ProphetX $21.08 free ($127 staked) • Novig $0 free ($59.97 open) • 4Cx $2.00</span></div>
-  <p style="margin-top:14px; font-size:0.9rem; color:var(--muted);">Both bots execute strictly inside the OddsJam platform (OddsJam Arbitrage with saved <strong>Funded Accounts Only</strong> filter for Arbitron; OddsJam Prediction Traders <strong>Sniper 80+ Pred4</strong> drawer for Prediction Sniper). Synced automatically every 30 minutes by Desk Oversight.</p>
+  <div class="metric-row"><span class="label">Funded Account Balances</span><span class="value">Waves $2,262.14 cash / $2,431 avail ($97 pending) • Polymarket US $61.01 free ($38.99 staked) • ProphetX $21.08 free ($127 staked) • Novig $0 cash/$0 credits ($59.97 open) • ParlayPlay $5 Free Entry • 4Cx $2 + 100 GC • Kalshi ODDSJAM $25 promo</span></div>
+  <p style="margin-top:14px; font-size:0.9rem; color:var(--muted);">Both bots execute <strong>24/7/365 across all worldwide sports & leagues in every time zone</strong> inside the OddsJam platform (Soccer, Tennis, Cricket, Basketball, Baseball, Hockey, MMA/Boxing, Table Tennis, Esports, and Prediction Markets) using OddsJam Arbitrage & Promo Converter with the saved <strong>Funded Accounts Only</strong> filter for Arbitron and OddsJam Prediction Traders <strong>Sniper 80+ Pred4</strong> drawer for Prediction Sniper. Synced automatically every 30 minutes by Desk Oversight.</p>
 </div>
-<div class="update-note">Auto-synced every 30 minutes to soonerdude28/arbitron-sniper-pl (main). Last synced: Wed, Oct 28, 2026 ~9:02 PM CDT.</div>
+<div class="update-note">Auto-synced every 30 minutes to soonerdude28/arbitron-sniper-pl (main). Last synced: Wed, Oct 28, 2026 ~9:21 PM CDT.</div>
 </body>
 </html>
