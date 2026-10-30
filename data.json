@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Fri, Oct 30, 2026 10:33 AM CDT",
-  "as_of_iso": "2026-10-30T10:33:36.986939-05:00",
+  "as_of": "Fri, Oct 30, 2026 3:40 PM CDT",
+  "as_of_iso": "2026-10-30T15:40:22.027304-05:00",
   "desk": {
     "realized_pnl": 68.28,
     "arbitron_realized": 96.94,
     "sniper_realized": -28.66,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 11,
-    "open_staked": 128.68,
-    "open_payout": 262.11,
-    "open_profit": 133.43,
+    "open_positions": 12,
+    "open_staked": 133.49,
+    "open_payout": 273.11,
+    "open_profit": 139.62,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -383,14 +383,23 @@
         "stake": 4.94,
         "entry": "38\u00a2",
         "payout": 13.0
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-30T15:25:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Knicks vs 76ers (Fri Oct 30 6:30 PM CT)",
+        "side": "Philadelphia 76ers ML",
+        "stake": 4.81,
+        "entry": "42.0\u00a2",
+        "payout": 11.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 11,
-        "staked_usd": 128.68,
-        "payout_usd": 262.11,
-        "profit_usd": 133.43
+        "count": 12,
+        "staked_usd": 133.49,
+        "payout_usd": 273.11,
+        "profit_usd": 139.62
       },
       "prophetx": {
         "count": 3,
@@ -399,10 +408,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 7,
-        "staked_usd": 48.68,
-        "payout_usd": 84.34,
-        "profit_usd": 35.66
+        "count": 8,
+        "staked_usd": 53.49,
+        "payout_usd": 95.34,
+        "profit_usd": 41.85
       }
     },
     "resting_orders": 0,
@@ -541,7 +550,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-30T10:24:00-05:00"
+    "ledger_updated_at": "2026-10-30T15:29:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -836,8 +845,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 19h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 32.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 24.2h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 37.2h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
