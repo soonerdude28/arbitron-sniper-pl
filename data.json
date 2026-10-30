@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "as_of": "Thu, Oct 29, 2026 8:00 PM CDT",
-  "as_of_iso": "2026-10-29T20:00:39-05:00",
+  "as_of": "Fri, Oct 30, 2026 10:33 AM CDT",
+  "as_of_iso": "2026-10-30T10:33:36.986939-05:00",
   "desk": {
-    "realized_pnl": 94.17,
-    "arbitron_realized": 96.15,
-    "sniper_realized": -1.98,
-    "locked_unsettled_profit": 0.79,
-    "open_positions": 16,
-    "open_staked": 167.69,
-    "open_payout": 355.71,
-    "open_profit": 188.02,
-    "parlayplay_free_entry_upside": 16.55,
-    "free_cash": 2456.36
+    "realized_pnl": 68.28,
+    "arbitron_realized": 96.94,
+    "sniper_realized": -28.66,
+    "locked_unsettled_profit": 0.0,
+    "open_positions": 11,
+    "open_staked": 128.68,
+    "open_payout": 262.11,
+    "open_profit": 133.43,
+    "parlayplay_free_entry_upside": 0,
+    "free_cash": 2524.37
   },
   "arbitron": {
-    "realized_pnl": 96.15,
-    "settled_tickets": 9,
-    "wins": 5,
-    "losses": 4,
+    "realized_pnl": 96.94,
+    "settled_tickets": 12,
+    "wins": 6,
+    "losses": 6,
     "groups": [
       {
         "name": "+EV props (Waves)",
@@ -149,8 +149,8 @@
       },
       {
         "name": "Promo conversion #3: ParlayPlay $5 Free Entry CAR @ GB",
-        "settled": false,
-        "pnl": null,
+        "settled": true,
+        "pnl": 0.0,
         "tickets": [
           {
             "id": 10,
@@ -159,16 +159,16 @@
             "odds": "+231",
             "stake": 5.0,
             "venue": "parlayplay",
-            "status": "open",
-            "payout": null,
-            "pnl": null
+            "status": "lost",
+            "payout": 0.0,
+            "pnl": 0.0
           }
         ]
       },
       {
         "name": "Two-sided arb: Fraser Minten SOG O/U 2.5 BOS @ STL (Novig $10 Over +186 / Waves $15 Under -140)",
-        "settled": false,
-        "pnl": null,
+        "settled": true,
+        "pnl": 0.79,
         "tickets": [
           {
             "id": 11,
@@ -177,9 +177,9 @@
             "odds": "+186",
             "stake": 10.0,
             "venue": "Novig",
-            "status": "open",
-            "payout": null,
-            "pnl": null
+            "status": "lost",
+            "payout": 0.0,
+            "pnl": -10.0
           },
           {
             "id": 12,
@@ -188,19 +188,19 @@
             "odds": "-140",
             "stake": 15.0,
             "venue": "thewaves808.com CAM719 BetBuilder (Props Builder)",
-            "status": "open",
-            "payout": null,
-            "pnl": null
+            "status": "won",
+            "payout": 25.79,
+            "pnl": 10.79
           }
         ]
       }
     ]
   },
   "sniper": {
-    "realized_pnl": -1.98,
-    "wins": 2,
-    "losses": 2,
-    "settled_stake": 24.55,
+    "realized_pnl": -28.66,
+    "wins": 3,
+    "losses": 5,
+    "settled_stake": 63.56,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -221,6 +221,24 @@
         "pnl": -7.0
       },
       {
+        "id": "PX-20261026-USER-001",
+        "exchange": null,
+        "market": "NFL Panthers vs Packers (Oct 29)",
+        "side": "Carolina Panthers ML",
+        "stake": 20.0,
+        "status": "settled_lost",
+        "pnl": -20.0
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Kings vs Pelicans (Oct 29 7:00 PM CT)",
+        "side": "Sacramento Kings ML",
+        "stake": 4.69,
+        "status": "EXITED_LOST",
+        "pnl": -3.9
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-29T12:55:00-05:00",
         "exchange": "Polymarket US",
         "market": "CS2 Eternal Fire vs Astralis (Oct 29 1:30 PM CT)",
@@ -237,6 +255,33 @@
         "stake": 4.75,
         "status": "SETTLED_WON",
         "pnl": 4.25
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-29T16:50:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NHL Blackhawks vs Red Wings (Oct 29 6:30 PM CT)",
+        "side": "Detroit Red Wings ML",
+        "stake": 4.93,
+        "status": "SETTLED_WON",
+        "pnl": 3.07
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-29T16:55:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NFL Panthers vs Packers Total (Oct 29 7:15 PM CT)",
+        "side": "Over 46.5",
+        "stake": 4.8,
+        "status": "SETTLED_LOST",
+        "pnl": -4.8
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-29T16:58:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NFL Panthers vs Packers (Oct 29 7:15 PM CT)",
+        "side": "Green Bay Packers ML",
+        "stake": 4.59,
+        "status": "EXITED_LOST",
+        "pnl": -1.05
       }
     ],
     "open": [
@@ -266,15 +311,6 @@
         "stake": 25.0,
         "entry": "85.51%",
         "payout": 29.24
-      },
-      {
-        "id": "PX-20261026-USER-001",
-        "exchange": "ProphetX",
-        "market": "Carolina Panthers at Green Bay Packers (Oct 29, 2026)",
-        "side": "Carolina Panthers - Moneyline",
-        "stake": 20.0,
-        "entry": "35.97%",
-        "payout": 55.6
       },
       {
         "id": "PMUS-20261028-001",
@@ -331,15 +367,6 @@
         "payout": 7.46
       },
       {
-        "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NBA Kings vs Pelicans (Oct 29 7:00 PM CT)",
-        "side": "Sacramento Kings ML",
-        "stake": 4.69,
-        "entry": "32\u00a2",
-        "payout": 14.0
-      },
-      {
         "id": "AUTO-Polymarket US-2026-10-29T12:54:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Hornets vs Wizards (Oct 30 6:00 PM CT)",
@@ -356,53 +383,26 @@
         "stake": 4.94,
         "entry": "38\u00a2",
         "payout": 13.0
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-29T16:50:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NHL Blackhawks vs Red Wings (Oct 29 6:30 PM CT)",
-        "side": "Detroit Red Wings ML",
-        "stake": 4.93,
-        "entry": "60\u00a2",
-        "payout": 8.0
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-29T16:55:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NFL Panthers vs Packers Total (Oct 29 7:15 PM CT)",
-        "side": "Over 46.5",
-        "stake": 4.8,
-        "entry": "52.5\u00a2",
-        "payout": 9.0
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-29T16:58:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NFL Panthers vs Packers (Oct 29 7:15 PM CT)",
-        "side": "Green Bay Packers ML",
-        "stake": 4.59,
-        "entry": "65\u00a2",
-        "payout": 7.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 16,
-        "staked_usd": 167.69,
-        "payout_usd": 355.71,
-        "profit_usd": 188.02
+        "count": 11,
+        "staked_usd": 128.68,
+        "payout_usd": 262.11,
+        "profit_usd": 133.43
       },
       "prophetx": {
-        "count": 4,
-        "staked_usd": 95.0,
-        "payout_usd": 225.91,
-        "profit_usd": 130.91
+        "count": 3,
+        "staked_usd": 75.0,
+        "payout_usd": 170.31,
+        "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 11,
-        "staked_usd": 67.69,
-        "payout_usd": 122.34,
-        "profit_usd": 54.65
+        "count": 7,
+        "staked_usd": 48.68,
+        "payout_usd": 84.34,
+        "profit_usd": 35.66
       }
     },
     "resting_orders": 0,
@@ -541,155 +541,304 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-29T17:51:00-05:00"
+    "ledger_updated_at": "2026-10-30T10:24:00-05:00"
   },
   "balances": {
-    "as_of_ct": "Thu, Oct 29, 2026 8:00 PM CDT",
-    "source_mode": "manual list from Christian",
+    "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
+    "source_mode": "live book-page sweep (desk_balances_live.json)",
     "accounts": [
       {
-        "book": "Waves",
+        "book": "Waves CAM719 (thewaves808.com)",
         "type": "sportsbook",
         "account_label_or_last4": "CAM719",
-        "cash_balance_usd": 2333.0,
-        "notes": "Available $2,518; $15 pending Minten Under. Shows in OddsJam as Jazz Straight and Props Builder."
+        "cash_balance_usd": 2344.0,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in (LOGIN click, CAM719 loaded); Balance $2,344, Available $2,544, Pending $0; reloaded at end",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
         "book": "ProphetX",
         "type": "exchange",
         "account_label_or_last4": null,
         "cash_balance_usd": 75.48,
-        "notes": "$95 in 4 open Sniper positions."
-      },
-      {
-        "book": "Polymarket US",
-        "type": "prediction market",
-        "account_label_or_last4": "quackysnail6677",
-        "cash_balance_usd": 39.83,
-        "notes": "$58.12 in 9 open positions."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; $75.48",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
         "book": "Novig",
         "type": "exchange",
         "account_label_or_last4": null,
         "cash_balance_usd": 6.05,
-        "notes": "$15 open; $21.04 portfolio."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "novig.com signed in; portfolio $11.04, cash ~$6.05",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
-        "book": "4Cx",
-        "type": "sweepstakes",
+        "book": "Polymarket US",
+        "type": "prediction",
         "account_label_or_last4": null,
-        "cash_balance_usd": 2.0,
-        "notes": "100 GC; needs ID verification."
+        "cash_balance_usd": 46.84,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; cash $46.84, portfolio $94.61",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
-        "book": "Underdog",
-        "type": "dfs",
+        "book": "Kalshi",
+        "type": "prediction",
+        "account_label_or_last4": null,
+        "cash_balance_usd": 50.0,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; $50.00 (check only)",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
+      },
+      {
+        "book": "Bovada",
+        "type": "sportsbook",
         "account_label_or_last4": null,
         "cash_balance_usd": 0.0,
-        "notes": ""
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; $0.00",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
         "book": "ParlayPlay",
         "type": "dfs",
         "account_label_or_last4": null,
         "cash_balance_usd": 0.0,
-        "notes": "$5 free entry on CAR @ GB tonight (pays $16.55)."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; $0.00",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
         "book": "BetOpenly",
-        "type": "p2p exchange",
+        "type": "exchange",
         "account_label_or_last4": null,
         "cash_balance_usd": 0.0,
-        "notes": "Needs ID verification."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; wallet $0.00",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
-        "book": "Onyx Odds",
-        "type": "sweepstakes",
+        "book": "4Cx",
+        "type": "exchange",
         "account_label_or_last4": null,
-        "cash_balance_usd": 0.0,
-        "notes": "1,000 coins (not withdrawable); page was blank at 3:40."
+        "cash_balance_usd": 2.0,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Signed in; wallet 2.00",
+        "source": "book_page (desk_session_health.json Arbitron 9:20 AM check)",
+        "as_of_ct": "2026-10-30T09:20:23-05:00",
+        "live_oddsjam_sweep": true
       },
       {
         "book": "Rebet",
-        "type": "sweepstakes",
+        "type": "sportsbook",
         "account_label_or_last4": null,
         "cash_balance_usd": null,
-        "notes": "Cash unknown; blocked by location."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "Logged out ('Sign in' shown); not signed in this check.",
+        "source": "book_page",
+        "as_of_ct": "2026-10-29T16:25:00-05:00",
+        "live_oddsjam_sweep": false
       },
       {
-        "book": "Kalshi",
-        "type": "prediction market",
+        "book": "BookMaker",
+        "type": "sportsbook",
         "account_label_or_last4": null,
         "cash_balance_usd": null,
-        "notes": "Cash unknown; logged out."
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "BetOnline",
+        "type": "sportsbook",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Jazz Sports",
+        "type": "sportsbook",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Dogg House",
+        "type": "dfs",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "DraftKings",
+        "type": "sportsbook",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Fanatics",
+        "type": "sportsbook",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Sleeper",
+        "type": "dfs",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Splash",
+        "type": "dfs",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
+      },
+      {
+        "book": "Chalkboard",
+        "type": "dfs",
+        "account_label_or_last4": null,
+        "cash_balance_usd": null,
+        "free_bet_or_bonus": null,
+        "restricted_pending_or_open_usd": null,
+        "notes": "not checked (saved login only; no balance read by desk)",
+        "source": "none",
+        "as_of_ct": null,
+        "live_oddsjam_sweep": false
       }
     ],
+    "totals": {
+      "cash_known_usd": 2524.37,
+      "accounts_with_known_cash": 9,
+      "accounts_unknown": 10
+    },
+    "as_of": "Fri, Oct 30, 2026 9:31 AM CDT",
+    "total": 2524.37,
     "books": [
       {
-        "book": "Waves",
-        "cash": 2333.0,
-        "note": "Available $2,518; $15 pending Minten Under. Shows in OddsJam as Jazz Straight and Props Builder."
+        "book": "Waves CAM719 (thewaves808.com) (CAM719)",
+        "cash": 2344.0,
+        "note": "Signed in (LOGIN click, CAM719 loaded); Balance $2,344, Available $2,544, Pending $0; reloaded at end"
       },
       {
         "book": "ProphetX",
         "cash": 75.48,
-        "note": "$95 in 4 open Sniper positions."
-      },
-      {
-        "book": "Polymarket US",
-        "cash": 39.83,
-        "note": "$58.12 in 9 open positions."
+        "note": "Signed in; $75.48"
       },
       {
         "book": "Novig",
         "cash": 6.05,
-        "note": "$15 open; $21.04 portfolio."
+        "note": "novig.com signed in; portfolio $11.04, cash ~$6.05"
       },
       {
-        "book": "4Cx",
-        "cash": 2.0,
-        "note": "100 GC; needs ID verification."
+        "book": "Polymarket US",
+        "cash": 46.84,
+        "note": "Signed in; cash $46.84, portfolio $94.61"
       },
       {
-        "book": "Underdog",
+        "book": "Kalshi",
+        "cash": 50.0,
+        "note": "Signed in; $50.00 (check only)"
+      },
+      {
+        "book": "Bovada",
         "cash": 0.0,
-        "note": ""
+        "note": "Signed in; $0.00"
       },
       {
         "book": "ParlayPlay",
         "cash": 0.0,
-        "note": "$5 free entry on CAR @ GB tonight (pays $16.55)."
+        "note": "Signed in; $0.00"
       },
       {
         "book": "BetOpenly",
         "cash": 0.0,
-        "note": "Needs ID verification."
+        "note": "Signed in; wallet $0.00"
       },
       {
-        "book": "Onyx Odds",
-        "cash": 0.0,
-        "note": "1,000 coins (not withdrawable); page was blank at 3:40."
-      },
-      {
-        "book": "Rebet",
-        "cash": null,
-        "note": "Cash unknown; blocked by location."
-      },
-      {
-        "book": "Kalshi",
-        "cash": null,
-        "note": "Cash unknown; logged out."
+        "book": "4Cx",
+        "cash": 2.0,
+        "note": "Signed in; wallet 2.00"
       }
-    ],
-    "total": 2456.36,
-    "free_cash_note": "Free cash only; pending/open amounts are not added."
+    ]
   },
   "brokers": {
     "source_of_truth": "Robinhood",
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
-    "stale": [],
+    "stale": [
+      "Robinhood snapshot is 19h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 32.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+    ],
     "totals": {
       "value": 6369.78,
       "cash": 2483.81,
