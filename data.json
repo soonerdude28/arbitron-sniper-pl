@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 3:03 PM CDT",
-  "as_of_iso": "2026-10-31T15:03:14.142378-05:00",
+  "as_of": "Sat, Oct 31, 2026 3:29 PM CDT",
+  "as_of_iso": "2026-10-31T15:29:12.298116-05:00",
   "desk": {
-    "realized_pnl": 79.91,
+    "realized_pnl": 75.7,
     "arbitron_realized": 96.94,
-    "sniper_realized": -17.03,
+    "sniper_realized": -21.24,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 29,
-    "open_staked": 213.84,
-    "open_payout": 286.65,
-    "open_profit": 72.81,
+    "open_positions": 24,
+    "open_staked": 190.31,
+    "open_payout": 277.65,
+    "open_profit": 87.34,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -17.03,
-    "wins": 6,
-    "losses": 7,
-    "settled_stake": 111.28,
+    "realized_pnl": -21.24,
+    "wins": 8,
+    "losses": 9,
+    "settled_stake": 130.07,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -376,11 +376,47 @@
       {
         "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
         "exchange": "Polymarket US",
+        "market": "CFB Delaware St vs Norfolk St (Sat Oct 31 2:00 PM CT)",
+        "side": "Delaware St ML",
+        "stake": 4.77,
+        "status": "EXITED_LOST",
+        "pnl": -3.19
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
+        "exchange": "Polymarket US",
         "market": "CFB UAB vs South Florida (Sat Oct 31 11:00 AM CT)",
         "side": "UAB +8.5",
         "stake": 4.84,
         "status": "EXITED_LOST",
         "pnl": -1.34
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "CFB Wisconsin vs Iowa (Sat Oct 31 11:00 AM CT)",
+        "side": "Iowa ML",
+        "stake": 4.58,
+        "status": "SETTLED_WON",
+        "pnl": 3.42
+      },
+      {
+        "id": "AUTO-Novig-2026-10-31T10:54:00-05:00",
+        "exchange": "Novig",
+        "market": "Soccer Dortmund vs Bayern Munich (Sat Oct 31 12:30 PM CT) regular time 3-way",
+        "side": "FC Bayern M\u00fcnchen \u2022 Yes (Regular Time 3-Way Winner)",
+        "stake": 5.0,
+        "status": "SETTLED_LOST",
+        "pnl": -5.0
+      },
+      {
+        "id": "AUTO-Kalshi-2026-10-31T12:26:00-05:00",
+        "exchange": "Kalshi",
+        "market": "Soccer Saudi Pro League Al Fateh vs Al Hilal (Sat Oct 31 1:00 PM CT) winner",
+        "side": "Yes \u00b7 Al Hilal",
+        "stake": 4.44,
+        "status": "SETTLED_WON",
+        "pnl": 0.56
       }
     ],
     "open": [
@@ -475,15 +511,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-04",
-        "exchange": "Polymarket US",
-        "market": "CFB Maine vs Rhode Island (Sat Oct 31 11:00 AM CT)",
-        "side": "Maine +14.5",
-        "stake": 4.74,
-        "entry": "57.5\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-05",
         "exchange": "Polymarket US",
         "market": "NFL Commanders vs Eagles (Sun Nov 1 7:20 PM CT)",
@@ -508,15 +535,6 @@
         "side": "Yes \u00b7 Georgia wins by over 11.5 points",
         "stake": 4.75,
         "entry": "52.75\u00a2",
-        "payout": 0.0
-      },
-      {
-        "id": "AUTO-20261031-10",
-        "exchange": "Polymarket US",
-        "market": "CFB Wisconsin vs Iowa (Sat Oct 31 11:00 AM CT)",
-        "side": "Iowa ML",
-        "stake": 4.58,
-        "entry": "55.5\u00a2",
         "payout": 0.0
       },
       {
@@ -583,15 +601,6 @@
         "payout": 10.0
       },
       {
-        "id": "AUTO-20261031-24",
-        "exchange": "Novig",
-        "market": "Soccer Dortmund vs Bayern Munich (Sat Oct 31 12:30 PM CT) regular time 3-way",
-        "side": "FC Bayern M\u00fcnchen \u2022 Yes (Regular Time 3-Way Winner)",
-        "stake": 5.0,
-        "entry": "73.5\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-25",
         "exchange": "Kalshi",
         "market": "NFL Vikings vs Lions (Sun Nov 1 12:00 PM CT) spread",
@@ -608,24 +617,6 @@
         "stake": 4.7,
         "entry": "47\u00a2",
         "payout": 0.0
-      },
-      {
-        "id": "AUTO-20261031-28",
-        "exchange": "Kalshi",
-        "market": "Al Fateh vs Al Hilal (Sat Oct 31 1:00 PM CT)",
-        "side": "Yes \u00b7 Al Hilal",
-        "stake": 4.44,
-        "entry": "88.74\u00a2",
-        "payout": 0.0
-      },
-      {
-        "id": "PMUS-DELST-ML-20261031",
-        "exchange": "Polymarket US",
-        "market": "CFB Delaware St vs Norfolk St (Sat Oct 31 2:00 PM CT)",
-        "side": "Delaware St ML",
-        "stake": 4.77,
-        "entry": "53\u00a2",
-        "payout": 9.0
       },
       {
         "id": "AUTO-20261031-22",
@@ -648,10 +639,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 29,
-        "staked_usd": 213.84,
-        "payout_usd": 286.65,
-        "profit_usd": 72.81
+        "count": 24,
+        "staked_usd": 190.31,
+        "payout_usd": 277.65,
+        "profit_usd": 87.34
       },
       "prophetx": {
         "count": 4,
@@ -660,13 +651,13 @@
         "profit_usd": 90.31
       },
       "polymarket_us": {
-        "count": 16,
-        "staked_usd": 91.07,
-        "payout_usd": 85.34,
-        "profit_usd": -5.73
+        "count": 13,
+        "staked_usd": 76.98,
+        "payout_usd": 76.34,
+        "profit_usd": -0.64
       }
     },
-    "resting_orders": 3,
+    "resting_orders": 0,
     "signals_total": 132,
     "signals": [
       {
@@ -1097,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 47.5h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 60.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 48h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 61h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
