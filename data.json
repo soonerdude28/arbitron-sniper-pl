@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Fri, Oct 30, 2026 3:40 PM CDT",
-  "as_of_iso": "2026-10-30T15:40:22.027304-05:00",
+  "as_of": "Fri, Oct 30, 2026 7:36 PM CDT",
+  "as_of_iso": "2026-10-30T19:36:39.006735-05:00",
   "desk": {
     "realized_pnl": 68.28,
     "arbitron_realized": 96.94,
     "sniper_realized": -28.66,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 12,
-    "open_staked": 133.49,
-    "open_payout": 273.11,
-    "open_profit": 139.62,
+    "open_positions": 13,
+    "open_staked": 138.36,
+    "open_payout": 280.11,
+    "open_profit": 141.75,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -392,14 +392,23 @@
         "stake": 4.81,
         "entry": "42.0\u00a2",
         "payout": 11.0
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
+        "side": "Portland Trail Blazers ML",
+        "stake": 4.87,
+        "entry": "68.0\u00a2",
+        "payout": 7.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 12,
-        "staked_usd": 133.49,
-        "payout_usd": 273.11,
-        "profit_usd": 139.62
+        "count": 13,
+        "staked_usd": 138.36,
+        "payout_usd": 280.11,
+        "profit_usd": 141.75
       },
       "prophetx": {
         "count": 3,
@@ -408,10 +417,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 8,
-        "staked_usd": 53.49,
-        "payout_usd": 95.34,
-        "profit_usd": 41.85
+        "count": 9,
+        "staked_usd": 58.36,
+        "payout_usd": 102.34,
+        "profit_usd": 43.98
       }
     },
     "resting_orders": 0,
@@ -550,7 +559,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-30T15:29:00-05:00"
+    "ledger_updated_at": "2026-10-30T19:25:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -845,8 +854,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 24.2h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 37.2h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 28.1h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 41.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
