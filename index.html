@@ -1,292 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OddsJam Pro Desk</title>
-<style>
-:root { --bg:#0b0f14; --card:#151b24; --border:#243040; --text:#e8eef6; --muted:#8a9bb0; --green:#00c48c; --red:#ff5a5f; --blue:#4d9fff; --accent:#7c5cff; }
-* { box-sizing:border-box; margin:0; padding:0; }
-body { font-family: system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--text); padding:16px; line-height:1.4; }
-.header { text-align:center; margin-bottom:20px; }
-.header h1 { font-size:1.6rem; font-weight:700; }
-.sub { color:var(--muted); font-size:.85rem; }
-.tabs { display:flex; gap:8px; justify-content:center; margin:12px 0 20px; flex-wrap:wrap; }
-.tab { background:var(--card); border:1px solid var(--border); color:var(--text); padding:8px 16px; border-radius:8px; cursor:pointer; font-size:.9rem; }
-.tab.active { background:var(--accent); border-color:var(--accent); }
-.panel { display:none; max-width:1200px; margin:0 auto; }
-.panel.active { display:block; }
-.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:16px; }
-.kpi-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px; }
-.kpi-title { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; }
-.kpi-val { font-size:1.3rem; font-weight:700; margin-top:4px; }
-.positive { color:var(--green); } .negative { color:var(--red); }
-.card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:16px; }
-h2 { font-size:1.1rem; margin-bottom:10px; }
-textarea, input, select, button { background:#0f141c; border:1px solid var(--border); color:var(--text); padding:8px; border-radius:6px; font-size:.9rem; width:100%; }
-button { background:var(--accent); border:none; cursor:pointer; font-weight:600; width:auto; padding:8px 14px; }
-button.secondary { background:#243040; }
-table { width:100%; border-collapse:collapse; font-size:.82rem; }
-th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--border); }
-th { color:var(--muted); font-weight:500; }
-.row-actions button { padding:4px 8px; font-size:.75rem; margin-right:4px; }
-.filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
-.filters select, .filters input { width:auto; min-width:120px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OddsJam Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0b0c;
+      --fg: #f3f3f4;
+      --muted: #9a9aa3;
+      --faint: #6c6c75;
+      --line: #2c2c31;
+      --up: #8fbfa8;
+      --down: #e08b8b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+    main { max-width: 72rem; margin: 0 auto; padding: 1.25rem 1.25rem 5rem; }
+    header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+    .kicker { margin: 0; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
+    h1 { margin: 0.2rem 0 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(2.5rem, 6vw, 3.25rem); line-height: 0.95; letter-spacing: -0.03em; }
+    .meta { color: var(--muted); font-size: 0.875rem; }
+    .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; }
+    @media (min-width: 900px) {
+      .stats { grid-template-columns: 1.3fr 1fr 1fr 1fr; }
+      .stats > div + div { border-left: 1px solid var(--line); }
+    }
+    .stat { padding: 1rem 0.25rem; }
+    @media (min-width: 640px) { .stat { padding: 1rem; } }
+    .stat p { margin: 0; }
+    .label { font-size: 0.75rem; color: var(--faint); }
+    .value { margin-top: 0.25rem; font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 1.25rem; }
+    .value.hero { font-family: Newsreader, Georgia, serif; font-size: clamp(2rem, 4vw, 2.5rem); letter-spacing: -0.03em; }
+    .hint { margin-top: 0.25rem; font-size: 0.75rem; color: var(--muted); }
+    .up { color: var(--up); }
+    .down { color: var(--down); }
+    .cap { display: flex; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); padding: 0.75rem 0.25rem 0.9rem; }
+    .cap span { font-size: 0.75rem; color: var(--faint); width: 4.5rem; }
+    .track { flex: 1; height: 1px; background: var(--line); }
+    .fill { height: 1px; background: var(--fg); }
+    .cap b { font-weight: 500; font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.75rem; color: var(--muted); width: 7rem; text-align: right; }
+    .layout { display: grid; gap: 2.5rem; margin-top: 2rem; }
+    @media (min-width: 960px) { .layout { grid-template-columns: minmax(0, 1fr) 16rem; align-items: start; } }
+    h2 { margin: 0 0 0.75rem; font-size: 0.875rem; font-weight: 500; }
+    .scroll { overflow-x: auto; }
+    table { width: 100%; min-width: 640px; border-collapse: collapse; text-align: left; font-size: 0.875rem; }
+    th { font-size: 0.75rem; font-weight: 500; color: var(--faint); padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--line); }
+    td { padding: 0.65rem 0.75rem 0.65rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; text-align: right; }
+    .sub { display: block; color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+    .cash { font-family: Newsreader, Georgia, serif; font-size: 1.75rem; margin: 0 0 1rem; }
+    .books { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .books li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; border-bottom: 1px solid var(--line); font-size: 0.875rem; }
+    .note { margin-top: 1rem; font-size: 0.75rem; line-height: 1.5; color: var(--faint); }
+    .err { color: var(--down); }
+    @media (max-width: 700px) {
+      table { display: none; }
+      .cards { display: block; }
+    }
+    .cards { display: none; border-top: 1px solid var(--line); }
+    .card { padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+    .card .row { display: flex; justify-content: space-between; gap: 0.75rem; }
+    .card .row p { margin: 0; min-width: 0; }
+  </style>
 </head>
 <body>
-<div class="header">
-  <h1>OddsJam Pro Desk</h1>
-  <div class="sub">Signal board · Risk sizing · Full trade journal · Local only</div>
-</div>
-<div class="tabs">
-  <div class="tab active" data-tab="signals">Signals</div>
-  <div class="tab" data-tab="trades">Trades & Bets</div>
-  <div class="tab" data-tab="risk">Risk</div>
-</div>
-
-<div id="signals" class="panel active">
-  <div class="card">
-    <h2>Paste OddsJam Table</h2>
-    <textarea id="paste" rows="6" placeholder="Paste markdown table from Prediction Traders or +EV here..."></textarea>
-    <div style="margin-top:8px; display:flex; gap:8px;">
-      <button onclick="parsePaste()">Parse & Add</button>
-      <button class="secondary" onclick="loadExample()">Load Example</button>
+  <main>
+    <header>
+      <div>
+        <p class="kicker">OddsJam desk</p>
+        <h1>Book</h1>
+      </div>
+      <p class="meta" id="asof">Loading ledger</p>
+    </header>
+    <section class="stats" id="stats"></section>
+    <div class="cap" id="cap"></div>
+    <div class="layout">
+      <section>
+        <h2>Open positions</h2>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Bot</th>
+                <th>Venue</th>
+                <th>Market</th>
+                <th class="num">Stake</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <div class="cards" id="cards"></div>
+      </section>
+      <aside>
+        <h2>Cash on hand</h2>
+        <p class="cash num" id="cash" style="text-align:left">—</p>
+        <ul class="books" id="books"></ul>
+        <p class="note" id="note"></p>
+      </aside>
     </div>
-  </div>
-  <div class="kpi" id="signalKpis"></div>
-  <div class="card">
-    <div class="filters">
-      <select id="sigFilter"><option value="all">All sources</option><option value="pt">Prediction Traders</option><option value="ev">+EV</option></select>
-      <input type="number" id="minConf" placeholder="Min score" value="70" style="width:100px;">
-    </div>
-    <table id="signalTable"><thead><tr><th>Score</th><th>Event</th><th>Side</th><th>Price</th><th>Size</th><th></th></tr></thead><tbody></tbody></table>
-  </div>
-</div>
-
-<div id="trades" class="panel">
-  <div class="kpi" id="tradeKpis"></div>
-  <div class="card">
-    <h2>Log Trade</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:8px;">
-      <input id="tVenue" placeholder="Venue (Waves, Kalshi...)">
-      <input id="tSport" placeholder="Sport">
-      <input id="tEvent" placeholder="Event / Market">
-      <input id="tSide" placeholder="Side">
-      <input id="tOdds" placeholder="Odds / Price">
-      <input id="tStake" type="number" placeholder="Stake" step="0.01">
-      <select id="tStatus"><option>open</option><option>won</option><option>lost</option><option>void</option></select>
-    </div>
-    <div style="margin-top:8px;"><button onclick="addTrade()">Add Trade</button></div>
-  </div>
-  <div class="card">
-    <div class="filters">
-      <select id="statusFilter"><option value="all">All</option><option value="open">Open</option><option value="won">Won</option><option value="lost">Lost</option></select>
-      <button class="secondary" onclick="exportTrades()">Export JSON</button>
-      <button class="secondary" onclick="document.getElementById('importFile').click()">Import JSON</button>
-      <input type="file" id="importFile" accept=".json" style="display:none" onchange="importTrades(event)">
-    </div>
-    <table id="tradeTable"><thead><tr><th>Date</th><th>Venue</th><th>Market</th><th>Side</th><th>Stake</th><th>Odds</th><th>Status</th><th>P/L</th><th></th></tr></thead><tbody></tbody></table>
-  </div>
-</div>
-
-<div id="risk" class="panel">
-  <div class="card">
-    <h2>Risk Settings</h2>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-      <div><label>Bankroll</label><input type="number" id="bankroll" value="2500"></div>
-      <div><label>Kelly Fraction</label><select id="kelly"><option value="0.25">Quarter</option><option value="0.5">Half</option><option value="0.1">Tenth</option></select></div>
-      <div><label>Daily Max Loss</label><input type="number" id="dailyLoss" value="150"></div>
-      <div><label>Used Today</label><input type="number" id="dailyUsed" value="0"></div>
-    </div>
-    <button style="margin-top:12px;" onclick="saveRisk()">Save</button>
-  </div>
-</div>
-
-<script>
-const $ = s => document.querySelector(s);
-const $$ = s => document.querySelectorAll(s);
-
-let signals = JSON.parse(localStorage.getItem('oj_signals') || '[]');
-let trades = JSON.parse(localStorage.getItem('oj_trades') || '[]');
-let risk = JSON.parse(localStorage.getItem('oj_risk') || '{"bankroll":2500,"kelly":0.25,"dailyLoss":150,"dailyUsed":0}');
-
-function saveAll() {
-  localStorage.setItem('oj_signals', JSON.stringify(signals));
-  localStorage.setItem('oj_trades', JSON.stringify(trades));
-  localStorage.setItem('oj_risk', JSON.stringify(risk));
-}
-
-function loadExample() {
-  const ex = `Score | Event | Side | Price | Confidence\n87 | NBA Pacers vs Heat | Miami Heat ML | 67¢ | 0.87\n81 | NFL Falcons/Bucs | Over 44.5 | -110 | 0.81\n75 | NBA Mavericks ML | Mavericks | 40¢ | 0.75`;
-  $('#paste').value = ex;
-  parsePaste();
-}
-
-function parsePaste() {
-  const text = $('#paste').value.trim();
-  if (!text) return;
-  const lines = text.split('\\n').filter(l => l.trim());
-  if (lines.length < 2) return;
-  const headers = lines[0].split('|').map(h => h.trim().toLowerCase());
-  for (let i = 1; i < lines.length; i++) {
-    const cols = lines[i].split('|').map(c => c.trim());
-    if (cols.length < 3) continue;
-    const sig = {
-      id: Date.now() + i,
-      score: parseFloat(cols[0]) || 0,
-      event: cols[1] || '',
-      side: cols[2] || '',
-      price: cols[3] || '',
-      source: 'paste'
+  </main>
+  <script>
+    const money = (n, signed) => {
+      const v = Number(n) || 0;
+      const body = Math.abs(v).toLocaleString("en-US", { style: "currency", currency: "USD" });
+      if (signed && v > 0) return "+" + body;
+      if (v < 0) return "-" + body;
+      return body;
     };
-    signals.push(sig);
-  }
-  saveAll();
-  renderSignals();
-  $('#paste').value = '';
-}
+    const tone = (n) => (n > 0.004 ? "up" : n < -0.004 ? "down" : "");
+    const esc = (s) => String(s ?? "")
+      .replace(/&/g, "&" + "amp;")
+      .replace(/</g, "&" + "lt;")
+      .replace(/>/g, "&" + "gt;")
+      .replace(/"/g, "&" + "quot;");
 
-function renderSignals() {
-  const min = parseFloat($('#minConf').value) || 0;
-  const tbody = $('#signalTable tbody');
-  tbody.innerHTML = '';
-  const filtered = signals.filter(s => s.score >= min);
-  filtered.forEach(s => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${s.score}</td><td>${s.event}</td><td>${s.side}</td><td>${s.price}</td><td>—</td>
-      <td class="row-actions"><button onclick="logFromSignal(${s.id})">Log</button><button class="secondary" onclick="removeSignal(${s.id})">×</button></td>`;
-    tbody.appendChild(tr);
-  });
-  $('#signalKpis').innerHTML = `<div class="kpi-card"><div class="kpi-title">Signals</div><div class="kpi-val">${filtered.length}</div></div>`;
-}
+    function stat(label, value, hint, cls, hero) {
+      return `<div class="stat"><p class="label">${label}</p><p class="value ${hero ? "hero" : ""} ${cls}">${value}</p><p class="hint">${hint}</p></div>`;
+    }
 
-function removeSignal(id) { signals = signals.filter(s => s.id !== id); saveAll(); renderSignals(); }
+    function render(data) {
+      const d = data.desk || {};
+      const sniper = data.sniper || {};
+      const arb = data.arbitron || {};
+      const open = (sniper.open || []).slice().sort((a, b) => (b.stake || 0) - (a.stake || 0));
+      document.getElementById("asof").textContent = data.as_of || "";
+      document.getElementById("stats").innerHTML = [
+        stat("Realized", money(d.realized_pnl, true), "Both books", tone(d.realized_pnl), true),
+        stat("Arbitron", money(d.arbitron_realized, true), `${arb.wins ?? 0}–${arb.losses ?? 0} settled`, tone(d.arbitron_realized)),
+        stat("Sniper", money(d.sniper_realized, true), `${sniper.wins ?? 0}–${sniper.losses ?? 0} settled`, tone(d.sniper_realized)),
+        stat("Open", money(d.open_staked), `${d.open_positions ?? open.length} positions · ${money(d.open_profit, true)} if cashed`, ""),
+      ].join("");
+      const bankroll = (Number(d.free_cash) || 0) + (Number(d.open_staked) || 0);
+      let arbOpen = 0;
+      for (const g of arb.groups || []) {
+        for (const t of g.tickets || []) {
+          if ((t.status || "open") === "open") arbOpen += Number(t.stake) || 0;
+        }
+      }
+      const capPct = bankroll ? (arbOpen / bankroll) * 100 : 0;
+      document.getElementById("cap").innerHTML = `<span>Arb cap</span><div class="track"><div class="fill" style="width:${Math.min(100, capPct)}%"></div></div><b>${capPct.toFixed(1)}% / 15%</b>`;
+      const row = (t) => `<tr><td>Sniper</td><td>${esc(t.exchange)}</td><td>${esc(t.market)}<span class="sub">${esc(t.side)}</span></td><td class="num">${money(t.stake)}</td><td>${esc(t.entry || "—")}</td></tr>`;
+      const card = (t) => `<article class="card"><div class="row"><p>${esc(t.market)}</p><p class="num">${money(t.stake)}</p></div><p class="sub">${esc(t.exchange)} · ${esc(t.side)}${t.entry ? " · " + esc(t.entry) : ""}</p></article>`;
+      document.getElementById("rows").innerHTML = open.map(row).join("") || `<tr><td colspan="5">No open positions.</td></tr>`;
+      document.getElementById("cards").innerHTML = open.map(card).join("");
+      const books = ((data.balances || {}).books || []).filter((b) => Number(b.cash) > 0);
+      const total = books.reduce((s, b) => s + Number(b.cash || 0), 0);
+      document.getElementById("cash").textContent = money(total || d.free_cash);
+      document.getElementById("books").innerHTML = books.map((b) => {
+        const name = String(b.book).replace(/ \(.*$/, "");
+        return `<li><span>${esc(name)}</span><span class="num" style="text-align:right">${money(b.cash)}</span></li>`;
+      }).join("");
+      document.getElementById("note").textContent = "Sniper is analyze-only. Arbitron is exchange-arb inside OddsJam. This page does not send bets. Ledger " + (data.as_of || "") + ".";
+    }
 
-function logFromSignal(id) {
-  const s = signals.find(x => x.id === id);
-  if (!s) return;
-  $('#tEvent').value = s.event;
-  $('#tSide').value = s.side;
-  $('#tOdds').value = s.price;
-  document.querySelector('[data-tab="trades"]').click();
-}
-
-function addTrade() {
-  const t = {
-    id: Date.now(),
-    date: new Date().toISOString().slice(0,10),
-    venue: $('#tVenue').value || 'Unknown',
-    sport: $('#tSport').value || '',
-    event: $('#tEvent').value || '',
-    side: $('#tSide').value || '',
-    odds: $('#tOdds').value || '',
-    stake: parseFloat($('#tStake').value) || 0,
-    status: $('#tStatus').value,
-    pnl: 0
-  };
-  if (t.status === 'won') t.pnl = calcPayout(t.odds, t.stake) - t.stake;
-  if (t.status === 'lost') t.pnl = -t.stake;
-  trades.push(t);
-  saveAll();
-  renderTrades();
-  ['tVenue','tSport','tEvent','tSide','tOdds','tStake'].forEach(id => $('#'+id).value = '');
-}
-
-function calcPayout(odds, stake) {
-  if (!odds) return stake;
-  if (odds.includes('¢') || odds.includes('c')) {
-    const p = parseFloat(odds) / 100;
-    return stake / p;
-  }
-  const n = parseFloat(odds);
-  if (n > 0) return stake * (n/100 + 1);
-  if (n < 0) return stake * (1 + 100/Math.abs(n));
-  return stake;
-}
-
-function renderTrades() {
-  const filter = $('#statusFilter').value;
-  const tbody = $('#tradeTable tbody');
-  tbody.innerHTML = '';
-  const list = filter === 'all' ? trades : trades.filter(t => t.status === filter);
-  let realized = 0, openStake = 0;
-  list.forEach(t => {
-    if (t.status !== 'open') realized += t.pnl || 0;
-    if (t.status === 'open') openStake += t.stake;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${t.date}</td><td>${t.venue}</td><td>${t.event}</td><td>${t.side}</td><td>$${t.stake.toFixed(2)}</td><td>${t.odds}</td><td>${t.status}</td><td class="${(t.pnl||0)>=0?'positive':'negative'}">${t.pnl>=0?'+':''}${(t.pnl||0).toFixed(2)}</td>
-      <td class="row-actions">${t.status==='open'?`<button onclick="settle(${t.id},'won')">Won</button><button onclick="settle(${t.id},'lost')">Lost</button>`:''}<button class="secondary" onclick="removeTrade(${t.id})">×</button></td>`;
-    tbody.appendChild(tr);
-  });
-  $('#tradeKpis').innerHTML = `
-    <div class="kpi-card"><div class="kpi-title">Realized</div><div class="kpi-val ${realized>=0?'positive':'negative'}">${realized>=0?'+':''}$${realized.toFixed(2)}</div></div>
-    <div class="kpi-card"><div class="kpi-title">Open Staked</div><div class="kpi-val">$${openStake.toFixed(2)}</div></div>
-    <div class="kpi-card"><div class="kpi-title">Trades</div><div class="kpi-val">${list.length}</div></div>`;
-}
-
-function settle(id, status) {
-  const t = trades.find(x => x.id === id);
-  if (!t) return;
-  t.status = status;
-  if (status === 'won') t.pnl = calcPayout(t.odds, t.stake) - t.stake;
-  if (status === 'lost') t.pnl = -t.stake;
-  saveAll(); renderTrades();
-}
-
-function removeTrade(id) { trades = trades.filter(t => t.id !== id); saveAll(); renderTrades(); }
-
-function exportTrades() {
-  const blob = new Blob([JSON.stringify(trades, null, 2)], {type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'oddsjam-trades.json';
-  a.click();
-}
-
-function importTrades(e) {
-  const file = e.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    try {
-      const data = JSON.parse(ev.target.result);
-      if (Array.isArray(data)) { trades = data; saveAll(); renderTrades(); }
-    } catch(err) { alert('Invalid JSON'); }
-  };
-  reader.readAsText(file);
-}
-
-function saveRisk() {
-  risk.bankroll = parseFloat($('#bankroll').value) || 0;
-  risk.kelly = parseFloat($('#kelly').value);
-  risk.dailyLoss = parseFloat($('#dailyLoss').value) || 0;
-  risk.dailyUsed = parseFloat($('#dailyUsed').value) || 0;
-  saveAll();
-  alert('Saved');
-}
-
-$$('.tab').forEach(tab => tab.onclick = () => {
-  $$('.tab').forEach(t => t.classList.remove('active'));
-  $$('.panel').forEach(p => p.classList.remove('active'));
-  tab.classList.add('active');
-  $('#'+tab.dataset.tab).classList.add('active');
-});
-
-$('#minConf').oninput = renderSignals;
-$('#statusFilter').onchange = renderTrades;
-
-if (trades.length === 0) {
-  trades = [
-    {id:1, date:'2026-10-30', venue:'Waves', sport:'NBA', event:'Spurs @ Jazz', side:'Jazz +13.5', odds:'+120', stake:25, status:'won', pnl:55},
-    {id:2, date:'2026-10-30', venue:'ProphetX', sport:'NBA', event:'Heat vs Hawks', side:'Heat', odds:'67¢', stake:8, status:'won', pnl:2.96},
-    {id:3, date:'2026-10-31', venue:'Polymarket', sport:'NBA', event:'Blazers vs Jazz', side:'Blazers ML', odds:'68¢', stake:4.87, status:'open', pnl:0}
-  ];
-  saveAll();
-}
-
-renderSignals();
-renderTrades();
-</script>
+    fetch("./data.json", { cache: "no-store" })
+      .then((r) => { if (!r.ok) throw new Error("ledger " + r.status); return r.json(); })
+      .then(render)
+      .catch((err) => { document.getElementById("asof").textContent = ""; document.getElementById("stats").innerHTML = `<p class="err">${esc(err.message)}</p>`; });
+  </script>
 </body>
 </html>
