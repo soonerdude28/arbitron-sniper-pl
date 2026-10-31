@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Fri, Oct 30, 2026 7:36 PM CDT",
-  "as_of_iso": "2026-10-30T19:36:39.006735-05:00",
+  "as_of": "Fri, Oct 30, 2026 10:58 PM CDT",
+  "as_of_iso": "2026-10-30T22:58:13.755808-05:00",
   "desk": {
-    "realized_pnl": 68.28,
+    "realized_pnl": 78.94,
     "arbitron_realized": 96.94,
-    "sniper_realized": -28.66,
+    "sniper_realized": -18.0,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 13,
-    "open_staked": 138.36,
-    "open_payout": 280.11,
-    "open_profit": 141.75,
+    "open_positions": 9,
+    "open_staked": 118.86,
+    "open_payout": 239.65,
+    "open_profit": 120.79,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -28.66,
-    "wins": 3,
-    "losses": 5,
-    "settled_stake": 63.56,
+    "realized_pnl": -18.0,
+    "wins": 6,
+    "losses": 6,
+    "settled_stake": 78.25,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -230,6 +230,15 @@
         "pnl": -20.0
       },
       {
+        "id": "NOVIG-20261029-HEAT-ML",
+        "exchange": "Novig",
+        "market": "Pacers @ Heat, Fri Oct 30 2026 7:05 PM CT (Novig time)",
+        "side": "Miami Heat ML (Winner)",
+        "stake": 5.0,
+        "status": "SETTLED_WON",
+        "pnl": 2.46
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Kings vs Pelicans (Oct 29 7:00 PM CT)",
@@ -239,6 +248,15 @@
         "pnl": -3.9
       },
       {
+        "id": "AUTO-Polymarket US-2026-10-29T12:54:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Hornets vs Wizards (Oct 30 6:00 PM CT)",
+        "side": "Washington Wizards ML",
+        "stake": 4.75,
+        "status": "SETTLED_WON",
+        "pnl": 4.25
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-29T12:55:00-05:00",
         "exchange": "Polymarket US",
         "market": "CS2 Eternal Fire vs Astralis (Oct 29 1:30 PM CT)",
@@ -246,6 +264,15 @@
         "stake": 4.8,
         "status": "EXITED_LOST",
         "pnl": -2.19
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-29T13:54:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Rockets vs Mavericks (Oct 30 7:00 PM CT)",
+        "side": "Dallas Mavericks ML",
+        "stake": 4.94,
+        "status": "EXITED_LOST",
+        "pnl": -2.24
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T14:55:00-05:00",
@@ -282,6 +309,15 @@
         "stake": 4.59,
         "status": "EXITED_LOST",
         "pnl": -1.05
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-30T15:25:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Knicks vs 76ers (Fri Oct 30 6:30 PM CT)",
+        "side": "Philadelphia 76ers ML",
+        "stake": 0.0,
+        "status": "SETTLED_WON",
+        "pnl": 6.19
       }
     ],
     "open": [
@@ -358,42 +394,6 @@
         "payout": 7.8
       },
       {
-        "id": "NOVIG-20261029-HEAT-ML",
-        "exchange": "Novig",
-        "market": "Pacers @ Heat, Fri Oct 30 2026 7:05 PM CT (Novig time)",
-        "side": "Miami Heat ML (Winner)",
-        "stake": 5.0,
-        "entry": "67.0\u00a2",
-        "payout": 7.46
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-29T12:54:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NBA Hornets vs Wizards (Oct 30 6:00 PM CT)",
-        "side": "Washington Wizards ML",
-        "stake": 4.75,
-        "entry": "51\u00a2",
-        "payout": 9.0
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-29T13:54:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NBA Rockets vs Mavericks (Oct 30 7:00 PM CT)",
-        "side": "Dallas Mavericks ML",
-        "stake": 4.94,
-        "entry": "38\u00a2",
-        "payout": 13.0
-      },
-      {
-        "id": "AUTO-Polymarket US-2026-10-30T15:25:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NBA Knicks vs 76ers (Fri Oct 30 6:30 PM CT)",
-        "side": "Philadelphia 76ers ML",
-        "stake": 4.81,
-        "entry": "42.0\u00a2",
-        "payout": 11.0
-      },
-      {
         "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
@@ -405,10 +405,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 13,
-        "staked_usd": 138.36,
-        "payout_usd": 280.11,
-        "profit_usd": 141.75
+        "count": 9,
+        "staked_usd": 118.86,
+        "payout_usd": 239.65,
+        "profit_usd": 120.79
       },
       "prophetx": {
         "count": 3,
@@ -417,10 +417,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 9,
-        "staked_usd": 58.36,
-        "payout_usd": 102.34,
-        "profit_usd": 43.98
+        "count": 6,
+        "staked_usd": 43.86,
+        "payout_usd": 69.34,
+        "profit_usd": 25.48
       }
     },
     "resting_orders": 0,
@@ -559,7 +559,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-30T19:25:00-05:00"
+    "ledger_updated_at": "2026-10-30T22:53:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -854,8 +854,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 28.1h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 41.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 31.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 44.5h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
