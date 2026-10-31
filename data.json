@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 2:33 PM CDT",
-  "as_of_iso": "2026-10-31T14:33:57.381847-05:00",
+  "as_of": "Sat, Oct 31, 2026 3:03 PM CDT",
+  "as_of_iso": "2026-10-31T15:03:14.142378-05:00",
   "desk": {
     "realized_pnl": 79.91,
     "arbitron_realized": 96.94,
     "sniper_realized": -17.03,
     "locked_unsettled_profit": 0.0,
     "open_positions": 29,
-    "open_staked": 213.48,
-    "open_payout": 281.65,
-    "open_profit": 68.17,
+    "open_staked": 213.84,
+    "open_payout": 286.65,
+    "open_profit": 72.81,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -628,6 +628,15 @@
         "payout": 9.0
       },
       {
+        "id": "AUTO-20261031-22",
+        "exchange": "Kalshi",
+        "market": "CS2 TheMongolz vs Legacy (IEM Beijing, Sun Nov 1 8:00 PM CT)",
+        "side": "Yes \u00b7 TheMongolz",
+        "stake": 4.8,
+        "entry": "48\u00a2",
+        "payout": 10.0
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
@@ -635,23 +644,14 @@
         "stake": 4.87,
         "entry": "68.0\u00a2",
         "payout": 7.0
-      },
-      {
-        "id": "AUTO-Kalshi-2026-10-31T12:26:00-05:00",
-        "exchange": "Kalshi",
-        "market": "Soccer Saudi Pro League Al Fateh vs Al Hilal (Sat Oct 31 1:00 PM CT) winner",
-        "side": "Yes \u00b7 Al Hilal",
-        "stake": 4.44,
-        "entry": "",
-        "payout": 5.0
       }
     ],
     "open_totals": {
       "all": {
         "count": 29,
-        "staked_usd": 213.48,
-        "payout_usd": 281.65,
-        "profit_usd": 68.17
+        "staked_usd": 213.84,
+        "payout_usd": 286.65,
+        "profit_usd": 72.81
       },
       "prophetx": {
         "count": 4,
@@ -666,7 +666,7 @@
         "profit_usd": -5.73
       }
     },
-    "resting_orders": 4,
+    "resting_orders": 3,
     "signals_total": 132,
     "signals": [
       {
@@ -1097,8 +1097,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 47h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 60.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 47.5h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 60.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
