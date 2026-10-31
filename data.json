@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Fri, Oct 30, 2026 10:58 PM CDT",
-  "as_of_iso": "2026-10-30T22:58:13.755808-05:00",
+  "as_of": "Sat, Oct 31, 2026 2:34 AM CDT",
+  "as_of_iso": "2026-10-31T02:34:53.717068-05:00",
   "desk": {
     "realized_pnl": 78.94,
     "arbitron_realized": 96.94,
     "sniper_realized": -18.0,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 9,
-    "open_staked": 118.86,
-    "open_payout": 239.65,
-    "open_profit": 120.79,
+    "open_positions": 23,
+    "open_staked": 184.97,
+    "open_payout": 246.65,
+    "open_profit": 61.68,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -394,6 +394,132 @@
         "payout": 7.8
       },
       {
+        "id": "PMUS-20261030-AUTO-BLAZERS",
+        "exchange": "Polymarket US",
+        "market": "NBA Trail Blazers vs Jazz (Sat Oct 31)",
+        "side": "Portland Trail Blazers ML \u2014 YES",
+        "stake": 4.87,
+        "entry": "68.0\u00a2",
+        "payout": 7.0
+      },
+      {
+        "id": "AUTO-20261031-01",
+        "exchange": "Polymarket US",
+        "market": "CFB UConn vs Air Force (Sat Oct 31 2:00 PM CT)",
+        "side": "Air Force ML",
+        "stake": 4.61,
+        "entry": "49.5\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-02",
+        "exchange": "Polymarket US",
+        "market": "CFB North Dakota vs Youngstown St (Sat Oct 31 11:00 AM CT)",
+        "side": "Under 61.5",
+        "stake": 4.62,
+        "entry": "55\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-04",
+        "exchange": "Polymarket US",
+        "market": "CFB Maine vs Rhode Island (Sat Oct 31 11:00 AM CT)",
+        "side": "Maine +14.5",
+        "stake": 4.74,
+        "entry": "57.5\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-05",
+        "exchange": "Polymarket US",
+        "market": "NFL Commanders vs Eagles (Sun Nov 1 7:20 PM CT)",
+        "side": "Commanders -3.5",
+        "stake": 4.81,
+        "entry": "58.5\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-06",
+        "exchange": "Polymarket US",
+        "market": "NBA Timberwolves vs Spurs (Sat Oct 31 7:00 PM CT)",
+        "side": "Over 226.5",
+        "stake": 4.75,
+        "entry": "51\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-07",
+        "exchange": "Polymarket US",
+        "market": "CFB UAB vs South Florida (Sat Oct 31 11:00 AM CT)",
+        "side": "UAB +8.5",
+        "stake": 4.84,
+        "entry": "52\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-09",
+        "exchange": "Kalshi",
+        "market": "CFB Florida vs Georgia (Sat Oct 31 2:30 PM CT)",
+        "side": "Georgia -11.5",
+        "stake": 4.75,
+        "entry": "51\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-10",
+        "exchange": "Polymarket US",
+        "market": "CFB Wisconsin vs Iowa (Sat Oct 31 11:00 AM CT)",
+        "side": "Iowa ML",
+        "stake": 4.58,
+        "entry": "55.5\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-11",
+        "exchange": "Polymarket US",
+        "market": "CFB Ohio State vs USC (Sat Oct 31 6:30 PM CT)",
+        "side": "Under 51.5",
+        "stake": 4.84,
+        "entry": "52\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-12",
+        "exchange": "Polymarket US",
+        "market": "NFL Patriots vs Dolphins (Sun Nov 1 3:25 PM CT)",
+        "side": "Dolphins +7.5",
+        "stake": 4.46,
+        "entry": "54\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-13",
+        "exchange": "Polymarket US",
+        "market": "CFB Marshall vs Old Dominion (Sat Oct 31 12:00 PM CT)",
+        "side": "Old Dominion team total Under 23.5",
+        "stake": 4.78,
+        "entry": "58\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-CAVS-U2385",
+        "exchange": "Kalshi",
+        "market": "NBA Cavaliers vs Bucks (Sat Oct 31 7:00 PM CT)",
+        "side": "Under 238.5 (NO on Over 238.5)",
+        "stake": 4.46,
+        "entry": "54\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-ORE-TTU265",
+        "exchange": "ProphetX",
+        "market": "CFB Northwestern vs Oregon (Sat Oct 31 2:30 PM CT)",
+        "side": "Oregon team total Under 26.5",
+        "stake": 5.0,
+        "entry": "55.75\u00a2",
+        "payout": 0.0
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
@@ -405,25 +531,25 @@
     ],
     "open_totals": {
       "all": {
-        "count": 9,
-        "staked_usd": 118.86,
-        "payout_usd": 239.65,
-        "profit_usd": 120.79
+        "count": 23,
+        "staked_usd": 184.97,
+        "payout_usd": 246.65,
+        "profit_usd": 61.68
       },
       "prophetx": {
-        "count": 3,
-        "staked_usd": 75.0,
+        "count": 4,
+        "staked_usd": 80.0,
         "payout_usd": 170.31,
-        "profit_usd": 95.31
+        "profit_usd": 90.31
       },
       "polymarket_us": {
-        "count": 6,
-        "staked_usd": 43.86,
-        "payout_usd": 69.34,
-        "profit_usd": 25.48
+        "count": 17,
+        "staked_usd": 95.76,
+        "payout_usd": 76.34,
+        "profit_usd": -19.42
       }
     },
-    "resting_orders": 0,
+    "resting_orders": 3,
     "signals_total": 132,
     "signals": [
       {
@@ -559,7 +685,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-30T22:53:00-05:00"
+    "ledger_updated_at": "2026-10-31T02:25:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -854,8 +980,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 31.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 44.5h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 35.1h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 48.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
