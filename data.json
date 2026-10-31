@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 11:56 AM CDT",
-  "as_of_iso": "2026-10-31T11:56:25.611769-05:00",
+  "as_of": "Sat, Oct 31, 2026 12:27 PM CDT",
+  "as_of_iso": "2026-10-31T12:27:43.172004-05:00",
   "desk": {
-    "realized_pnl": 77.97,
+    "realized_pnl": 77.8,
     "arbitron_realized": 96.94,
-    "sniper_realized": -18.97,
+    "sniper_realized": -19.14,
     "locked_unsettled_profit": 0.0,
     "open_positions": 29,
-    "open_staked": 213.53,
-    "open_payout": 281.65,
-    "open_profit": 68.12,
+    "open_staked": 213.77,
+    "open_payout": 275.65,
+    "open_profit": 61.88,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -18.97,
+    "realized_pnl": -19.14,
     "wins": 6,
     "losses": 6,
-    "settled_stake": 97.43,
+    "settled_stake": 101.89,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -273,6 +273,15 @@
         "stake": 4.97,
         "status": "exited_stop",
         "pnl": -2.26
+      },
+      {
+        "id": "AUTO-20261031-26",
+        "exchange": "Kalshi",
+        "market": "Dortmund vs Bayern regulation winner",
+        "side": "Yes Bayern",
+        "stake": 4.46,
+        "status": null,
+        "pnl": -0.17
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -592,13 +601,13 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-26",
+        "id": "AUTO-20261031-27",
         "exchange": "Kalshi",
-        "market": "Soccer Dortmund vs Bayern Munich (Sat Oct 31 12:30 PM CT) regulation winner",
-        "side": "Yes \u00b7 Bayern Munich (win in regulation)",
-        "stake": 4.46,
-        "entry": "73\u00a2",
-        "payout": 6.0
+        "market": "Soccer EPL Fulham vs Aston Villa (Sat Oct 31 3:00 PM CT) regulation winner",
+        "side": "Yes \u00b7 Aston Villa (win in regulation)",
+        "stake": 4.7,
+        "entry": "47\u00a2",
+        "payout": 0.0
       },
       {
         "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
@@ -622,9 +631,9 @@
     "open_totals": {
       "all": {
         "count": 29,
-        "staked_usd": 213.53,
-        "payout_usd": 281.65,
-        "profit_usd": 68.12
+        "staked_usd": 213.77,
+        "payout_usd": 275.65,
+        "profit_usd": 61.88
       },
       "prophetx": {
         "count": 6,
@@ -1070,8 +1079,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 44.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 57.4h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 44.9h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 58h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
