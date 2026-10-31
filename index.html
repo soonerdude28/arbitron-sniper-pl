@@ -28,7 +28,9 @@
     header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
     .kicker { margin: 0; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
     h1 { margin: 0.2rem 0 0; font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: clamp(2.5rem, 6vw, 3.25rem); line-height: 0.95; letter-spacing: -0.03em; }
-    .meta { color: var(--muted); font-size: 0.875rem; }
+    .meta { color: var(--muted); font-size: 0.875rem; text-align: right; }
+    .meta p { margin: 0; }
+    .live { margin-top: 0.2rem; font-size: 0.75rem; color: var(--faint); }
     .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; }
     @media (min-width: 900px) {
       .stats { grid-template-columns: 1.3fr 1fr 1fr 1fr; }
@@ -79,7 +81,10 @@
         <p class="kicker">OddsJam desk</p>
         <h1>Book</h1>
       </div>
-      <p class="meta" id="asof">Loading ledger</p>
+      <div class="meta">
+        <p id="asof">Loading ledger</p>
+        <p class="live" id="live">Watching the repo</p>
+      </div>
     </header>
     <section class="stats" id="stats"></section>
     <div class="cap" id="cap"></div>
@@ -166,8 +171,60 @@
 
     fetch("./data.json", { cache: "no-store" })
       .then((r) => { if (!r.ok) throw new Error("ledger " + r.status); return r.json(); })
-      .then(render)
-      .catch((err) => { document.getElementById("asof").textContent = ""; document.getElementById("stats").innerHTML = `<p class="err">${esc(err.message)}</p>`; });
+      .then((data) => { if (!seen) render(data); })
+      .catch((err) => { document.getElementById("asof").textContent = err.message; });
+
+    const REPO = "soonerdude28/arbitron-sniper-pl";
+    let etag = "";
+    let sha = "";
+    let seen = "";
+
+    function fingerprint(data) {
+      const open = ((data.sniper || {}).open || []).map((t) => [t.id, t.stake, t.status, t.entry].join(":")).join(",");
+      const d = data.desk || {};
+      return [data.as_of, d.realized_pnl, d.open_staked, d.open_positions, open].join("|");
+    }
+
+    const renderOnly = render;
+    render = function (data) {
+      const fp = fingerprint(data);
+      if (fp === seen) return;
+      seen = fp;
+      renderOnly(data);
+    };
+
+    function stamp() {
+      return new Date().toLocaleTimeString("en-US", { timeZone: "America/Chicago", hour: "numeric", minute: "2-digit" });
+    }
+
+    async function tick() {
+      const live = document.getElementById("live");
+      try {
+        const headers = { Accept: "application/vnd.github+json" };
+        if (etag) headers["If-None-Match"] = etag;
+        const meta = await fetch("https://api.github.com/repos/" + REPO + "/commits/main", { headers, cache: "no-store" });
+        if (meta.status === 304) {
+          live.textContent = "Watching · " + stamp() + " CT";
+          return;
+        }
+        if (!meta.ok) throw new Error("git " + meta.status);
+        etag = meta.headers.get("etag") || etag;
+        const next = (await meta.json()).sha;
+        if (next && next !== sha) {
+          sha = next;
+          const file = await fetch("https://raw.githubusercontent.com/" + REPO + "/" + sha + "/data.json", { cache: "no-store" });
+          if (!file.ok) throw new Error("ledger " + file.status);
+          render(await file.json());
+        }
+        live.textContent = "Watching · " + stamp() + " CT";
+      } catch (err) {
+        live.textContent = "Retrying · " + stamp() + " CT";
+      }
+    }
+
+    tick();
+    setInterval(tick, 60000);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
   </script>
 </body>
 </html>
