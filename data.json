@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 5:04 PM CDT",
-  "as_of_iso": "2026-10-31T17:04:48.360735-05:00",
+  "as_of": "Sat, Oct 31, 2026 5:33 PM CDT",
+  "as_of_iso": "2026-10-31T17:33:01.596794-05:00",
   "desk": {
-    "realized_pnl": 81.16,
+    "realized_pnl": 76.29,
     "arbitron_realized": 96.94,
-    "sniper_realized": -15.78,
+    "sniper_realized": -20.65,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 22,
-    "open_staked": 180.19,
+    "open_positions": 21,
+    "open_staked": 175.49,
     "open_payout": 269.65,
-    "open_profit": 89.46,
+    "open_profit": 94.16,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -15.78,
+    "realized_pnl": -20.65,
     "wins": 10,
-    "losses": 9,
-    "settled_stake": 134.85,
+    "losses": 10,
+    "settled_stake": 139.55,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -242,7 +242,7 @@
         "id": "AUTO-20261031-KX-BTTS",
         "exchange": "Kalshi",
         "market": "EPL Man United vs Chelsea BTTS Yes",
-        "side": null,
+        "side": "Yes \u00b7 Chelsea vs Manchester United: BTTS (Both Teams To Score)",
         "stake": 4.59,
         "status": null,
         "pnl": -2.05
@@ -291,6 +291,15 @@
         "stake": 4.55,
         "status": "settled_won",
         "pnl": 3.45
+      },
+      {
+        "id": "AUTO-20261031-27",
+        "exchange": "Kalshi",
+        "market": "Fulham vs Aston Villa - Aston Villa win in regulation",
+        "side": "Yes \u00b7 Aston Villa (win in regulation)",
+        "stake": 4.7,
+        "status": "SETTLED_LOST",
+        "pnl": -4.87
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -610,15 +619,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-27",
-        "exchange": "Kalshi",
-        "market": "Soccer EPL Fulham vs Aston Villa (Sat Oct 31 3:00 PM CT) regulation winner",
-        "side": "Yes \u00b7 Aston Villa (win in regulation)",
-        "stake": 4.7,
-        "entry": "47\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-22",
         "exchange": "Kalshi",
         "market": "CS2 TheMongolz vs Legacy (IEM Beijing, Sun Nov 1 8:00 PM CT)",
@@ -639,10 +639,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 22,
-        "staked_usd": 180.19,
+        "count": 21,
+        "staked_usd": 175.49,
         "payout_usd": 269.65,
-        "profit_usd": 89.46
+        "profit_usd": 94.16
       },
       "prophetx": {
         "count": 4,
@@ -793,7 +793,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-31T16:31:00-05:00"
+    "ledger_updated_at": "2026-10-31T17:20:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 49.6h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 62.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 50h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 63.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
