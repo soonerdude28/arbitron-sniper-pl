@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 5:33 PM CDT",
-  "as_of_iso": "2026-10-31T17:33:01.596794-05:00",
+  "as_of": "Sat, Oct 31, 2026 5:56 PM CDT",
+  "as_of_iso": "2026-10-31T17:56:37.751787-05:00",
   "desk": {
-    "realized_pnl": 76.29,
+    "realized_pnl": 79.35,
     "arbitron_realized": 96.94,
-    "sniper_realized": -20.65,
+    "sniper_realized": -17.59,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 21,
-    "open_staked": 175.49,
-    "open_payout": 269.65,
-    "open_profit": 94.16,
+    "open_positions": 19,
+    "open_staked": 166.48,
+    "open_payout": 263.65,
+    "open_profit": 97.17,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -20.65,
-    "wins": 10,
+    "realized_pnl": -17.59,
+    "wins": 11,
     "losses": 10,
-    "settled_stake": 139.55,
+    "settled_stake": 148.56,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -300,6 +300,24 @@
         "stake": 4.7,
         "status": "SETTLED_LOST",
         "pnl": -4.87
+      },
+      {
+        "id": "AUTO-20261031-01",
+        "exchange": "Polymarket US",
+        "market": "CFB UConn vs Air Force",
+        "side": "Air Force ML",
+        "stake": 4.61,
+        "status": "SETTLED_WON",
+        "pnl": 4.39
+      },
+      {
+        "id": "AUTO-20261031-29",
+        "exchange": "Kalshi",
+        "market": "NCAAF Minnesota vs Indiana",
+        "side": "Yes Indiana",
+        "stake": 4.4,
+        "status": "SETTLED_STOP_EXIT",
+        "pnl": -1.33
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -520,15 +538,6 @@
         "payout": 7.8
       },
       {
-        "id": "AUTO-20261031-01",
-        "exchange": "Polymarket US",
-        "market": "CFB UConn vs Air Force (Sat Oct 31 2:00 PM CT)",
-        "side": "Air Force ML",
-        "stake": 4.61,
-        "entry": "49.5\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-05",
         "exchange": "Polymarket US",
         "market": "NFL Commanders vs Eagles (Sun Nov 1 7:20 PM CT)",
@@ -626,23 +635,14 @@
         "stake": 4.8,
         "entry": "48\u00a2",
         "payout": 10.0
-      },
-      {
-        "id": "AUTO-20261031-29",
-        "exchange": "Kalshi",
-        "market": "NCAAF Minnesota vs Indiana (live, halftime MIN 10-7) game winner (kxncaafgame-26oct30minnind)",
-        "side": "Yes \u00b7 Indiana",
-        "stake": 4.4,
-        "entry": "72\u00a2",
-        "payout": 6.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 21,
-        "staked_usd": 175.49,
-        "payout_usd": 269.65,
-        "profit_usd": 94.16
+        "count": 19,
+        "staked_usd": 166.48,
+        "payout_usd": 263.65,
+        "profit_usd": 97.17
       },
       "prophetx": {
         "count": 4,
@@ -651,10 +651,10 @@
         "profit_usd": 90.31
       },
       "polymarket_us": {
-        "count": 10,
-        "staked_usd": 62.46,
+        "count": 9,
+        "staked_usd": 57.85,
         "payout_usd": 62.34,
-        "profit_usd": -0.12
+        "profit_usd": 4.49
       }
     },
     "resting_orders": 1,
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 50h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 63.1h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 50.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 63.4h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
