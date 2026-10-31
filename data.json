@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 5:56 PM CDT",
-  "as_of_iso": "2026-10-31T17:56:37.751787-05:00",
+  "as_of": "Sat, Oct 31, 2026 6:30 PM CDT",
+  "as_of_iso": "2026-10-31T18:30:28.509728-05:00",
   "desk": {
-    "realized_pnl": 79.35,
+    "realized_pnl": 78.6,
     "arbitron_realized": 96.94,
-    "sniper_realized": -17.59,
+    "sniper_realized": -18.34,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 19,
-    "open_staked": 166.48,
+    "open_positions": 17,
+    "open_staked": 156.73,
     "open_payout": 263.65,
-    "open_profit": 97.17,
+    "open_profit": 106.92,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -17.59,
+    "realized_pnl": -18.34,
     "wins": 11,
     "losses": 10,
-    "settled_stake": 148.56,
+    "settled_stake": 158.31,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -318,6 +318,24 @@
         "stake": 4.4,
         "status": "SETTLED_STOP_EXIT",
         "pnl": -1.33
+      },
+      {
+        "id": "AUTO-20261031-09",
+        "exchange": "Kalshi",
+        "market": "CFB Florida vs Georgia (Sat Oct 31 2:30 PM CT)",
+        "side": "Yes \u00b7 Georgia wins by over 11.5 points",
+        "stake": 4.75,
+        "status": "FILLED",
+        "pnl": 4.25
+      },
+      {
+        "id": "AUTO-20261031-ORE-TTU265",
+        "exchange": "ProphetX",
+        "market": "CFB Northwestern vs Oregon (Sat Oct 31 2:30 PM CT)",
+        "side": "Oregon team total Under 26.5",
+        "stake": 5.0,
+        "status": null,
+        "pnl": -5.0
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -556,15 +574,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-09",
-        "exchange": "Kalshi",
-        "market": "CFB Florida vs Georgia (Sat Oct 31 2:30 PM CT)",
-        "side": "Yes \u00b7 Georgia wins by over 11.5 points",
-        "stake": 4.75,
-        "entry": "52.75\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-11",
         "exchange": "Polymarket US",
         "market": "CFB Ohio State vs USC (Sat Oct 31 6:30 PM CT)",
@@ -589,15 +598,6 @@
         "side": "Under 238.5 (NO on Over 238.5)",
         "stake": 4.46,
         "entry": "54\u00a2",
-        "payout": 0.0
-      },
-      {
-        "id": "AUTO-20261031-ORE-TTU265",
-        "exchange": "ProphetX",
-        "market": "CFB Northwestern vs Oregon (Sat Oct 31 2:30 PM CT)",
-        "side": "Oregon team total Under 26.5",
-        "stake": 5.0,
-        "entry": "55.75\u00a2",
         "payout": 0.0
       },
       {
@@ -639,16 +639,16 @@
     ],
     "open_totals": {
       "all": {
-        "count": 19,
-        "staked_usd": 166.48,
+        "count": 17,
+        "staked_usd": 156.73,
         "payout_usd": 263.65,
-        "profit_usd": 97.17
+        "profit_usd": 106.92
       },
       "prophetx": {
-        "count": 4,
-        "staked_usd": 80.0,
+        "count": 3,
+        "staked_usd": 75.0,
         "payout_usd": 170.31,
-        "profit_usd": 90.31
+        "profit_usd": 95.31
       },
       "polymarket_us": {
         "count": 9,
@@ -657,7 +657,7 @@
         "profit_usd": 4.49
       }
     },
-    "resting_orders": 1,
+    "resting_orders": 0,
     "signals_total": 132,
     "signals": [
       {
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 50.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 63.4h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 51h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 64h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
