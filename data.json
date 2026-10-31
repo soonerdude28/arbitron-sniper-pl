@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 4:04 PM CDT",
-  "as_of_iso": "2026-10-31T16:04:48.518171-05:00",
+  "as_of": "Sat, Oct 31, 2026 5:04 PM CDT",
+  "as_of_iso": "2026-10-31T17:04:48.360735-05:00",
   "desk": {
-    "realized_pnl": 78.92,
+    "realized_pnl": 81.16,
     "arbitron_realized": 96.94,
-    "sniper_realized": -18.02,
+    "sniper_realized": -15.78,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 23,
-    "open_staked": 185.53,
-    "open_payout": 277.65,
-    "open_profit": 92.12,
+    "open_positions": 22,
+    "open_staked": 180.19,
+    "open_payout": 269.65,
+    "open_profit": 89.46,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,8 +197,8 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -18.02,
-    "wins": 9,
+    "realized_pnl": -15.78,
+    "wins": 10,
     "losses": 9,
     "settled_stake": 134.85,
     "settled": [
@@ -374,6 +374,15 @@
         "pnl": 6.19
       },
       {
+        "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
+        "side": "Portland Trail Blazers ML",
+        "stake": 0.0,
+        "status": "SETTLED_WON",
+        "pnl": 2.24
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
         "exchange": "Polymarket US",
         "market": "CFB Delaware St vs Norfolk St (Sat Oct 31 2:00 PM CT)",
@@ -502,15 +511,6 @@
         "payout": 7.8
       },
       {
-        "id": "PMUS-20261030-AUTO-BLAZERS",
-        "exchange": "Polymarket US",
-        "market": "NBA Trail Blazers vs Jazz (Sat Oct 31)",
-        "side": "Portland Trail Blazers ML \u2014 YES",
-        "stake": 4.87,
-        "entry": "68.0\u00a2",
-        "payout": 7.0
-      },
-      {
         "id": "AUTO-20261031-01",
         "exchange": "Polymarket US",
         "market": "CFB UConn vs Air Force (Sat Oct 31 2:00 PM CT)",
@@ -628,21 +628,21 @@
         "payout": 10.0
       },
       {
-        "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
-        "exchange": "Polymarket US",
-        "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
-        "side": "Portland Trail Blazers ML",
-        "stake": 4.87,
-        "entry": "68.0\u00a2",
-        "payout": 7.0
+        "id": "AUTO-20261031-29",
+        "exchange": "Kalshi",
+        "market": "NCAAF Minnesota vs Indiana (live, halftime MIN 10-7) game winner (kxncaafgame-26oct30minnind)",
+        "side": "Yes \u00b7 Indiana",
+        "stake": 4.4,
+        "entry": "72\u00a2",
+        "payout": 6.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 23,
-        "staked_usd": 185.53,
-        "payout_usd": 277.65,
-        "profit_usd": 92.12
+        "count": 22,
+        "staked_usd": 180.19,
+        "payout_usd": 269.65,
+        "profit_usd": 89.46
       },
       "prophetx": {
         "count": 4,
@@ -651,13 +651,13 @@
         "profit_usd": 90.31
       },
       "polymarket_us": {
-        "count": 12,
-        "staked_usd": 72.2,
-        "payout_usd": 76.34,
-        "profit_usd": 4.14
+        "count": 10,
+        "staked_usd": 62.46,
+        "payout_usd": 62.34,
+        "profit_usd": -0.12
       }
     },
-    "resting_orders": 0,
+    "resting_orders": 1,
     "signals_total": 132,
     "signals": [
       {
@@ -793,7 +793,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-31T15:52:00-05:00"
+    "ledger_updated_at": "2026-10-31T16:31:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 48.6h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 61.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 49.6h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 62.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
