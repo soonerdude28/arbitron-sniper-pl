@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 10:29 AM CDT",
-  "as_of_iso": "2026-10-31T10:29:42.046159-05:00",
+  "as_of": "Sat, Oct 31, 2026 11:29 AM CDT",
+  "as_of_iso": "2026-10-31T11:29:14.058016-05:00",
   "desk": {
-    "realized_pnl": 83.26,
+    "realized_pnl": 80.23,
     "arbitron_realized": 96.94,
-    "sniper_realized": -13.68,
+    "sniper_realized": -16.71,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 27,
-    "open_staked": 203.72,
+    "open_positions": 29,
+    "open_staked": 214.04,
     "open_payout": 275.65,
-    "open_profit": 71.93,
+    "open_profit": 61.61,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -13.68,
+    "realized_pnl": -16.71,
     "wins": 6,
     "losses": 6,
-    "settled_stake": 87.84,
+    "settled_stake": 92.46,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -255,6 +255,15 @@
         "stake": 5.0,
         "status": "settled_won",
         "pnl": 6.37
+      },
+      {
+        "id": "AUTO-20261031-02",
+        "exchange": "Polymarket US",
+        "market": "CFB North Dakota vs Youngstown St (Sat Oct 31 11:00 AM CT)",
+        "side": "Under 61.5",
+        "stake": 4.62,
+        "status": "EXITED_STOP",
+        "pnl": -3.03
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -430,15 +439,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-02",
-        "exchange": "Polymarket US",
-        "market": "CFB North Dakota vs Youngstown St (Sat Oct 31 11:00 AM CT)",
-        "side": "Under 61.5",
-        "stake": 4.62,
-        "entry": "55\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-04",
         "exchange": "Polymarket US",
         "market": "CFB Maine vs Rhode Island (Sat Oct 31 11:00 AM CT)",
@@ -565,6 +565,33 @@
         "payout": 10.0
       },
       {
+        "id": "AUTO-20261031-23",
+        "exchange": "Kalshi",
+        "market": "CFB SMU vs Syracuse (Sat Oct 31 11:00 AM CT) spread",
+        "side": "Yes \u00b7 SMU wins by over 9.5 points (KXNCAAFSPREAD-26OCT31SMUSYR-SMU10)",
+        "stake": 4.97,
+        "entry": "49.75\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-24",
+        "exchange": "Novig",
+        "market": "Soccer Dortmund vs Bayern Munich (Sat Oct 31 12:30 PM CT) regular time 3-way",
+        "side": "FC Bayern M\u00fcnchen \u2022 Yes (Regular Time 3-Way Winner)",
+        "stake": 5.0,
+        "entry": "73.5\u00a2",
+        "payout": 0.0
+      },
+      {
+        "id": "AUTO-20261031-25",
+        "exchange": "Kalshi",
+        "market": "NFL Vikings vs Lions (Sun Nov 1 12:00 PM CT) spread",
+        "side": "Yes \u00b7 DET Lions win by over 3.5 points (KXNFLSPREAD-26NOV01MINDET)",
+        "stake": 4.97,
+        "entry": "49.75\u00a2",
+        "payout": 0.0
+      },
+      {
         "id": "AUTO-Polymarket US-2026-10-30T19:25:00-05:00",
         "exchange": "Polymarket US",
         "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
@@ -585,10 +612,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 27,
-        "staked_usd": 203.72,
+        "count": 29,
+        "staked_usd": 214.04,
         "payout_usd": 275.65,
-        "profit_usd": 71.93
+        "profit_usd": 61.61
       },
       "prophetx": {
         "count": 6,
@@ -597,13 +624,13 @@
         "profit_usd": 89.21
       },
       "polymarket_us": {
-        "count": 17,
-        "staked_usd": 95.76,
+        "count": 16,
+        "staked_usd": 91.14,
         "payout_usd": 76.34,
-        "profit_usd": -19.42
+        "profit_usd": -14.8
       }
     },
-    "resting_orders": 4,
+    "resting_orders": 5,
     "signals_total": 132,
     "signals": [
       {
@@ -739,7 +766,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-31T10:08:00-05:00"
+    "ledger_updated_at": "2026-10-31T10:31:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -1034,8 +1061,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 43h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 56h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 44h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 57h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
