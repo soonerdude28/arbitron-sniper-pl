@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 3:29 PM CDT",
-  "as_of_iso": "2026-10-31T15:29:12.298116-05:00",
+  "as_of": "Sat, Oct 31, 2026 4:04 PM CDT",
+  "as_of_iso": "2026-10-31T16:04:48.518171-05:00",
   "desk": {
-    "realized_pnl": 75.7,
+    "realized_pnl": 78.92,
     "arbitron_realized": 96.94,
-    "sniper_realized": -21.24,
+    "sniper_realized": -18.02,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 24,
-    "open_staked": 190.31,
+    "open_positions": 23,
+    "open_staked": 185.53,
     "open_payout": 277.65,
-    "open_profit": 87.34,
+    "open_profit": 92.12,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -21.24,
-    "wins": 8,
+    "realized_pnl": -18.02,
+    "wins": 9,
     "losses": 9,
-    "settled_stake": 130.07,
+    "settled_stake": 134.85,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -401,6 +401,15 @@
         "pnl": 3.42
       },
       {
+        "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "CFB Marshall vs Old Dominion (Sat Oct 31 12:00 PM CT)",
+        "side": "Old Dominion team total Under 23.5",
+        "stake": 4.78,
+        "status": "SETTLED_WON",
+        "pnl": 3.22
+      },
+      {
         "id": "AUTO-Novig-2026-10-31T10:54:00-05:00",
         "exchange": "Novig",
         "market": "Soccer Dortmund vs Bayern Munich (Sat Oct 31 12:30 PM CT) regular time 3-way",
@@ -556,15 +565,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-13",
-        "exchange": "Polymarket US",
-        "market": "CFB Marshall vs Old Dominion (Sat Oct 31 12:00 PM CT)",
-        "side": "Old Dominion team total Under 23.5",
-        "stake": 4.78,
-        "entry": "58\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-CAVS-U2385",
         "exchange": "Kalshi",
         "market": "NBA Cavaliers vs Bucks (Sat Oct 31 7:00 PM CT)",
@@ -639,10 +639,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 24,
-        "staked_usd": 190.31,
+        "count": 23,
+        "staked_usd": 185.53,
         "payout_usd": 277.65,
-        "profit_usd": 87.34
+        "profit_usd": 92.12
       },
       "prophetx": {
         "count": 4,
@@ -651,10 +651,10 @@
         "profit_usd": 90.31
       },
       "polymarket_us": {
-        "count": 13,
-        "staked_usd": 76.98,
+        "count": 12,
+        "staked_usd": 72.2,
         "payout_usd": 76.34,
-        "profit_usd": -0.64
+        "profit_usd": 4.14
       }
     },
     "resting_orders": 0,
@@ -793,7 +793,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-31T14:21:19-05:00"
+    "ledger_updated_at": "2026-10-31T15:52:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 48h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 61h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 48.6h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 61.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
