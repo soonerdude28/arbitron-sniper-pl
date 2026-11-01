@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 7:57 PM CDT",
-  "as_of_iso": "2026-10-31T19:57:04.709103-05:00",
+  "as_of": "Sat, Oct 31, 2026 8:28 PM CDT",
+  "as_of_iso": "2026-10-31T20:28:53.138515-05:00",
   "desk": {
-    "realized_pnl": 73.89,
+    "realized_pnl": 69.77,
     "arbitron_realized": 96.94,
-    "sniper_realized": -23.05,
+    "sniper_realized": -27.17,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 15,
-    "open_staked": 146.92,
-    "open_payout": 253.65,
-    "open_profit": 106.73,
+    "open_positions": 13,
+    "open_staked": 137.65,
+    "open_payout": 242.65,
+    "open_profit": 105.0,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -23.05,
+    "realized_pnl": -27.17,
     "wins": 11,
-    "losses": 12,
-    "settled_stake": 182.38,
+    "losses": 14,
+    "settled_stake": 191.65,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -482,13 +482,31 @@
         "pnl": 3.22
       },
       {
+        "id": "AUTO-Kalshi-2026-10-31T02:19:00-05:00",
+        "exchange": "Kalshi",
+        "market": "NBA Cavaliers vs Bucks (Sat Oct 31 7:00 PM CT)",
+        "side": "Under 238.5 (NO on Over 238.5)",
+        "stake": 4.46,
+        "status": "EXITED_LOST",
+        "pnl": -1.24
+      },
+      {
+        "id": "AUTO-Kalshi-2026-10-31T07:01:00-05:00",
+        "exchange": "Kalshi",
+        "market": "NBA Thunder vs Rockets (Sat Oct 31 7:00 PM CT)",
+        "side": "Yes \u00b7 OKC Thunder (game winner)",
+        "stake": 4.81,
+        "status": "EXITED_LOST",
+        "pnl": -2.84
+      },
+      {
         "id": "AUTO-Kalshi-2026-10-31T07:28:00-05:00",
         "exchange": "Kalshi",
         "market": "NBA Kings vs Grizzlies (Sat Oct 31 7:00 PM CT) total points",
         "side": "Yes \u00b7 SAC Kings vs MEM Grizzlies: Total Points Over 232.5",
         "stake": 4.8,
         "status": "EXITED_LOST",
-        "pnl": -1.76
+        "pnl": -1.8
       },
       {
         "id": "AUTO-Novig-2026-10-31T10:54:00-05:00",
@@ -601,24 +619,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-CAVS-U2385",
-        "exchange": "Kalshi",
-        "market": "NBA Cavaliers vs Bucks (Sat Oct 31 7:00 PM CT)",
-        "side": "Under 238.5 (NO on Over 238.5)",
-        "stake": 4.46,
-        "entry": "54\u00a2",
-        "payout": 0.0
-      },
-      {
-        "id": "AUTO-20261031-KX-OKC",
-        "exchange": "Kalshi",
-        "market": "NBA Thunder vs Rockets (Sat Oct 31 7:00 PM CT)",
-        "side": "Yes \u00b7 OKC Thunder (game winner)",
-        "stake": 4.81,
-        "entry": "42\u00a2",
-        "payout": 11.0
-      },
-      {
         "id": "AUTO-20261031-25",
         "exchange": "Kalshi",
         "market": "NFL Vikings vs Lions (Sun Nov 1 12:00 PM CT) spread",
@@ -648,10 +648,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 15,
-        "staked_usd": 146.92,
-        "payout_usd": 253.65,
-        "profit_usd": 106.73
+        "count": 13,
+        "staked_usd": 137.65,
+        "payout_usd": 242.65,
+        "profit_usd": 105.0
       },
       "prophetx": {
         "count": 3,
@@ -1097,8 +1097,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 52.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 65.5h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 53h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 66h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
