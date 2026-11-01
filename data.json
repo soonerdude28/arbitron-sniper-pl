@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 7:03 PM CDT",
-  "as_of_iso": "2026-10-31T19:03:36.074961-05:00",
+  "as_of": "Sat, Oct 31, 2026 7:31 PM CDT",
+  "as_of_iso": "2026-10-31T19:31:40.660182-05:00",
   "desk": {
-    "realized_pnl": 76.77,
+    "realized_pnl": 73.89,
     "arbitron_realized": 96.94,
-    "sniper_realized": -20.17,
+    "sniper_realized": -23.05,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 16,
-    "open_staked": 151.89,
-    "open_payout": 263.65,
-    "open_profit": 111.76,
+    "open_positions": 14,
+    "open_staked": 142.3,
+    "open_payout": 253.65,
+    "open_profit": 111.35,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -20.17,
+    "realized_pnl": -23.05,
     "wins": 11,
-    "losses": 10,
-    "settled_stake": 163.15,
+    "losses": 12,
+    "settled_stake": 182.38,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -423,7 +423,7 @@
         "exchange": "Polymarket US",
         "market": "NBA Knicks vs 76ers (Fri Oct 30 6:30 PM CT)",
         "side": "Philadelphia 76ers ML",
-        "stake": 0.0,
+        "stake": 4.81,
         "status": "SETTLED_WON",
         "pnl": 6.19
       },
@@ -432,7 +432,7 @@
         "exchange": "Polymarket US",
         "market": "NBA Trail Blazers vs Jazz (Sat Oct 31 12:00 PM CT)",
         "side": "Portland Trail Blazers ML",
-        "stake": 0.0,
+        "stake": 4.87,
         "status": "SETTLED_WON",
         "pnl": 2.24
       },
@@ -444,6 +444,15 @@
         "stake": 4.77,
         "status": "EXITED_LOST",
         "pnl": -3.19
+      },
+      {
+        "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
+        "exchange": "Polymarket US",
+        "market": "NBA Timberwolves vs Spurs (Sat Oct 31 7:00 PM CT)",
+        "side": "Over 226.5",
+        "stake": 4.75,
+        "status": "EXITED_LOST",
+        "pnl": -1.12
       },
       {
         "id": "AUTO-Polymarket US-2026-10-31T01:50:00-05:00",
@@ -471,6 +480,15 @@
         "stake": 4.78,
         "status": "SETTLED_WON",
         "pnl": 3.22
+      },
+      {
+        "id": "AUTO-Kalshi-2026-10-31T07:28:00-05:00",
+        "exchange": "Kalshi",
+        "market": "NBA Kings vs Grizzlies (Sat Oct 31 7:00 PM CT) total points",
+        "side": "Yes \u00b7 SAC Kings vs MEM Grizzlies: Total Points Over 232.5",
+        "stake": 4.8,
+        "status": "EXITED_LOST",
+        "pnl": -1.76
       },
       {
         "id": "AUTO-Novig-2026-10-31T10:54:00-05:00",
@@ -574,15 +592,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-06",
-        "exchange": "Polymarket US",
-        "market": "NBA Timberwolves vs Spurs (Sat Oct 31 7:00 PM CT)",
-        "side": "Over 226.5",
-        "stake": 4.75,
-        "entry": "51\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-12",
         "exchange": "Polymarket US",
         "market": "NFL Patriots vs Dolphins (Sun Nov 1 3:25 PM CT)",
@@ -610,15 +619,6 @@
         "payout": 11.0
       },
       {
-        "id": "AUTO-KINGS-O2325",
-        "exchange": "Kalshi",
-        "market": "NBA Kings vs Grizzlies (Sat Oct 31 7:00 PM CT) total points",
-        "side": "Yes \u00b7 SAC Kings vs MEM Grizzlies: Total Points Over 232.5",
-        "stake": 4.84,
-        "entry": "48.44\u00a2",
-        "payout": 10.0
-      },
-      {
         "id": "AUTO-20261031-25",
         "exchange": "Kalshi",
         "market": "NFL Vikings vs Lions (Sun Nov 1 12:00 PM CT) spread",
@@ -639,10 +639,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 16,
-        "staked_usd": 151.89,
-        "payout_usd": 263.65,
-        "profit_usd": 111.76
+        "count": 14,
+        "staked_usd": 142.3,
+        "payout_usd": 253.65,
+        "profit_usd": 111.35
       },
       "prophetx": {
         "count": 3,
@@ -651,10 +651,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 8,
-        "staked_usd": 53.01,
+        "count": 7,
+        "staked_usd": 48.26,
         "payout_usd": 62.34,
-        "profit_usd": 9.33
+        "profit_usd": 14.08
       }
     },
     "resting_orders": 0,
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 51.5h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 64.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 52h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 65h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
