@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 6:30 PM CDT",
-  "as_of_iso": "2026-10-31T18:30:28.509728-05:00",
+  "as_of": "Sat, Oct 31, 2026 7:03 PM CDT",
+  "as_of_iso": "2026-10-31T19:03:36.074961-05:00",
   "desk": {
-    "realized_pnl": 78.6,
+    "realized_pnl": 76.77,
     "arbitron_realized": 96.94,
-    "sniper_realized": -18.34,
+    "sniper_realized": -20.17,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 17,
-    "open_staked": 156.73,
+    "open_positions": 16,
+    "open_staked": 151.89,
     "open_payout": 263.65,
-    "open_profit": 106.92,
+    "open_profit": 111.76,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -197,10 +197,10 @@
     ]
   },
   "sniper": {
-    "realized_pnl": -18.34,
+    "realized_pnl": -20.17,
     "wins": 11,
     "losses": 10,
-    "settled_stake": 158.31,
+    "settled_stake": 163.15,
     "settled": [
       {
         "id": "PX-20261028-004",
@@ -336,6 +336,15 @@
         "stake": 5.0,
         "status": null,
         "pnl": -5.0
+      },
+      {
+        "id": "AUTO-20261031-11",
+        "exchange": "Polymarket US",
+        "market": "CFB Ohio State vs USC (Sat Oct 31 6:30 PM CT)",
+        "side": "Under 51.5",
+        "stake": 4.84,
+        "status": "exited_stop",
+        "pnl": -1.83
       },
       {
         "id": "AUTO-Polymarket US-2026-10-29T12:53:00-05:00",
@@ -574,15 +583,6 @@
         "payout": 0.0
       },
       {
-        "id": "AUTO-20261031-11",
-        "exchange": "Polymarket US",
-        "market": "CFB Ohio State vs USC (Sat Oct 31 6:30 PM CT)",
-        "side": "Under 51.5",
-        "stake": 4.84,
-        "entry": "52\u00a2",
-        "payout": 0.0
-      },
-      {
         "id": "AUTO-20261031-12",
         "exchange": "Polymarket US",
         "market": "NFL Patriots vs Dolphins (Sun Nov 1 3:25 PM CT)",
@@ -639,10 +639,10 @@
     ],
     "open_totals": {
       "all": {
-        "count": 17,
-        "staked_usd": 156.73,
+        "count": 16,
+        "staked_usd": 151.89,
         "payout_usd": 263.65,
-        "profit_usd": 106.92
+        "profit_usd": 111.76
       },
       "prophetx": {
         "count": 3,
@@ -651,10 +651,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 9,
-        "staked_usd": 57.85,
+        "count": 8,
+        "staked_usd": 53.01,
         "payout_usd": 62.34,
-        "profit_usd": 4.49
+        "profit_usd": 9.33
       }
     },
     "resting_orders": 0,
@@ -1088,8 +1088,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 51h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 64h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 51.5h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 64.6h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
