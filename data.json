@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "as_of": "Sat, Oct 31, 2026 7:31 PM CDT",
-  "as_of_iso": "2026-10-31T19:31:40.660182-05:00",
+  "as_of": "Sat, Oct 31, 2026 7:57 PM CDT",
+  "as_of_iso": "2026-10-31T19:57:04.709103-05:00",
   "desk": {
     "realized_pnl": 73.89,
     "arbitron_realized": 96.94,
     "sniper_realized": -23.05,
     "locked_unsettled_profit": 0.0,
-    "open_positions": 14,
-    "open_staked": 142.3,
+    "open_positions": 15,
+    "open_staked": 146.92,
     "open_payout": 253.65,
-    "open_profit": 111.35,
+    "open_profit": 106.73,
     "parlayplay_free_entry_upside": 0,
     "free_cash": 2524.37
   },
@@ -635,14 +635,23 @@
         "stake": 4.8,
         "entry": "48\u00a2",
         "payout": 10.0
+      },
+      {
+        "id": "AUTO-20261031-30",
+        "exchange": "Polymarket US",
+        "market": "Texas Governor 2026",
+        "side": "Greg Abbott (R) No",
+        "stake": 4.62,
+        "entry": "34\u00a2",
+        "payout": 0.0
       }
     ],
     "open_totals": {
       "all": {
-        "count": 14,
-        "staked_usd": 142.3,
+        "count": 15,
+        "staked_usd": 146.92,
         "payout_usd": 253.65,
-        "profit_usd": 111.35
+        "profit_usd": 106.73
       },
       "prophetx": {
         "count": 3,
@@ -651,10 +660,10 @@
         "profit_usd": 95.31
       },
       "polymarket_us": {
-        "count": 7,
-        "staked_usd": 48.26,
+        "count": 8,
+        "staked_usd": 52.88,
         "payout_usd": 62.34,
-        "profit_usd": 14.08
+        "profit_usd": 9.46
       }
     },
     "resting_orders": 0,
@@ -793,7 +802,7 @@
         "recommendation": null
       }
     ],
-    "ledger_updated_at": "2026-10-31T17:20:00-05:00"
+    "ledger_updated_at": "2026-10-31T19:50:00-05:00"
   },
   "balances": {
     "as_of_ct": "Fri, Oct 30, 2026 9:31 AM CDT",
@@ -1088,8 +1097,8 @@
     "robinhood_as_of": "2026-10-29 03:31 PM CDT",
     "tradelabs_as_of": "2026-10-29 02:30 AM CDT (approx)",
     "stale": [
-      "Robinhood snapshot is 52h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
-      "Trade Labs snapshot is 65h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
+      "Robinhood snapshot is 52.4h old (as of 2026-10-29 03:31 PM CDT) \u2014 refresh before trusting",
+      "Trade Labs snapshot is 65.5h old (as of 2026-10-29 02:30 AM CDT (approx)) \u2014 refresh before trusting"
     ],
     "totals": {
       "value": 6369.78,
